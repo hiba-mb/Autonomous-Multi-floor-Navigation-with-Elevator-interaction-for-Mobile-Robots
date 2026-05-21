@@ -1,0 +1,13 @@
+{
+  "package_name": "multi_floor_nav",
+  "output_dir": "/home/hm/ros2_ws/build/multi_floor_nav/rosidl_generator_type_description/multi_floor_nav",
+  "idl_tuples": [
+    "/home/hm/ros2_ws/build/multi_floor_nav/rosidl_adapter/multi_floor_nav:srv/IntTrigger.idl",
+    "/home/hm/ros2_ws/build/multi_floor_nav/rosidl_adapter/multi_floor_nav:msg/MissionRequest.idl"
+  ],
+  "include_paths": [
+    "std_msgs:/opt/ros/jazzy/share/std_msgs",
+    "builtin_interfaces:/opt/ros/jazzy/share/builtin_interfaces",
+    "service_msgs:/opt/ros/jazzy/share/service_msgs"
+  ]
+}

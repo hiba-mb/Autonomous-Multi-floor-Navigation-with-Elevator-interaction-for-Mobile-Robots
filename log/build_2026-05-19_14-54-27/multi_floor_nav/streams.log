@@ -1,0 +1,216 @@
+[0.027s] Invoking command in '/home/hm/ros2_ws/build/multi_floor_nav': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/hm/ros2_ws/build/multi_floor_nav -- -j12 -l12
+[0.220s] [  1%] Built target multi_floor_nav__rs
+[0.227s] [  3%] Built target multi_floor_nav__rosidl_generator_type_description
+[0.253s] [  3%] Built target ament_cmake_python_symlink_multi_floor_nav
+[0.290s] [  7%] Built target robot_visibility_node
+[0.293s] [  9%] Built target multi_floor_nav__cpp
+[0.300s] [ 24%] Built target multi_floor_nav__rosidl_generator_c
+[0.344s] [ 45%] Built target multi_floor_nav__rosidl_typesupport_introspection_c
+[0.345s] [ 47%] Built target multi_floor_nav__rosidl_typesupport_introspection_cpp
+[0.345s] [ 47%] Built target multi_floor_nav__rosidl_typesupport_c
+[0.349s] [ 60%] Built target multi_floor_nav__rosidl_typesupport_fastrtps_c
+[0.349s] [ 62%] Built target multi_floor_nav__rosidl_typesupport_cpp
+[0.352s] [ 69%] Built target multi_floor_nav__rosidl_typesupport_fastrtps_cpp
+[0.383s] [ 69%] Built target multi_floor_nav
+[0.385s] [ 73%] Built target change_map_node
+[0.393s] [ 77%] Built target multi_floor_navigation_node
+[0.402s] [ 79%] [32mBuilding CXX object CMakeFiles/elevator_bt_executor.dir/src/elevator_bt_executor.cpp.o[0m
+[0.413s] [ 81%] Built target multi_floor_nav__py
+[0.468s] [ 86%] Built target multi_floor_nav__rosidl_generator_py
+[0.511s] [ 90%] Built target multi_floor_nav_s__rosidl_typesupport_c
+[0.512s] [ 98%] Built target multi_floor_nav_s__rosidl_typesupport_introspection_c
+[0.512s] [ 98%] Built target multi_floor_nav_s__rosidl_typesupport_fastrtps_c
+[0.563s] running egg_info
+[0.577s] writing multi_floor_nav.egg-info/PKG-INFO
+[0.577s] writing dependency_links to multi_floor_nav.egg-info/dependency_links.txt
+[0.577s] writing top-level names to multi_floor_nav.egg-info/top_level.txt
+[0.630s] reading manifest file 'multi_floor_nav.egg-info/SOURCES.txt'
+[0.630s] writing manifest file 'multi_floor_nav.egg-info/SOURCES.txt'
+[0.665s] [ 98%] Built target ament_cmake_python_build_multi_floor_nav_egg
+[5.061s] In file included from [01m[K/home/hm/ros2_ws/src/robot-multi-floor-navigation/multi_floor_nav/src/elevator_bt_executor.cpp:22[m[K:
+[5.061s] [01m[K/home/hm/ros2_ws/src/robot-multi-floor-navigation/multi_floor_nav/include/multi_floor_nav/bt_nodes/elevator_mqtt_nodes.hpp:[m[K In lambda function:
+[5.061s] [01m[K/home/hm/ros2_ws/src/robot-multi-floor-navigation/multi_floor_nav/include/multi_floor_nav/bt_nodes/elevator_mqtt_nodes.hpp:104:68:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[5.061s]   104 |       client_->set_message_callback([this]([01;35m[Kmqtt::const_message_ptr msg[m[K) {
+[5.062s]       |                                            [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[5.265s] [01m[K/home/hm/ros2_ws/src/robot-multi-floor-navigation/multi_floor_nav/src/elevator_bt_executor.cpp:[m[K In member function ‘[01m[Kdouble NavigateToElevatorEntry::[01;32m[KgetCurrentYaw[m[K()[m[K’:
+[5.265s] [01m[K/home/hm/ros2_ws/src/robot-multi-floor-navigation/multi_floor_nav/src/elevator_bt_executor.cpp:311:29:[m[K [01;35m[Kwarning: [m[Kignoring return value of ‘[01m[Kbool BT::Blackboard::[01;32m[Kget[m[K(const std::string&, T&) const [35m[K[with T = std::__cxx11::basic_string<char>; std::string = std::__cxx11::basic_string<char>][m[K[m[K’, declared with attribute ‘[01m[Knodiscard[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-result-Wunused-result]8;;[m[K]
+[5.265s]   311 |     [01;35m[Kconfig().blackboard->get("robot_namespace", robot_ns)[m[K;
+[5.265s]       |     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[5.265s] In file included from [01m[K/opt/ros/jazzy/include/behaviortree_cpp/tree_node.h:17[m[K,
+[5.265s]                  from [01m[K/opt/ros/jazzy/include/behaviortree_cpp/leaf_node.h:17[m[K,
+[5.265s]                  from [01m[K/opt/ros/jazzy/include/behaviortree_cpp/action_node.h:17[m[K,
+[5.265s]                  from [01m[K/opt/ros/jazzy/include/behaviortree_cpp/behavior_tree.h:16[m[K,
+[5.265s]                  from [01m[K/opt/ros/jazzy/include/behaviortree_cpp/bt_factory.h:17[m[K,
+[5.265s]                  from [01m[K/home/hm/ros2_ws/src/robot-multi-floor-navigation/multi_floor_nav/src/elevator_bt_executor.cpp:10[m[K:
+[5.266s] [01m[K/opt/ros/jazzy/include/behaviortree_cpp/blackboard.h:389:13:[m[K [01;36m[Knote: [m[Kdeclared here
+[5.266s]   389 | inline bool [01;36m[KBlackboard[m[K::get(const std::string& key, T& value) const
+[5.266s]       |             [01;36m[K^~~~~~~~~~[m[K
+[5.348s] [01m[K/home/hm/ros2_ws/src/robot-multi-floor-navigation/multi_floor_nav/src/elevator_bt_executor.cpp:[m[K In lambda function:
+[5.349s] [01m[K/home/hm/ros2_ws/src/robot-multi-floor-navigation/multi_floor_nav/src/elevator_bt_executor.cpp:656:16:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kelapsed[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[5.349s]   656 |           auto [01;35m[Kelapsed[m[K = std::chrono::duration<double>(
+[5.349s]       |                [01;35m[K^~~~~~~[m[K
+[5.425s] [01m[K/home/hm/ros2_ws/src/robot-multi-floor-navigation/multi_floor_nav/src/elevator_bt_executor.cpp:[m[K In member function ‘[01m[Kvirtual BT::NodeStatus ElevatorBTExecutor::IsRobot::[01;32m[Ktick[m[K()[m[K’:
+[5.425s] [01m[K/home/hm/ros2_ws/src/robot-multi-floor-navigation/multi_floor_nav/src/elevator_bt_executor.cpp:834:27:[m[K [01;35m[Kwarning: [m[Kignoring return value of ‘[01m[Kbool BT::Blackboard::[01;32m[Kget[m[K(const std::string&, T&) const [35m[K[with T = std::__cxx11::basic_string<char>; std::string = std::__cxx11::basic_string<char>][m[K[m[K’, declared with attribute ‘[01m[Knodiscard[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-result-Wunused-result]8;;[m[K]
+[5.425s]   834 |   [01;35m[Kconfig().blackboard->get("robot_namespace", actual)[m[K;
+[5.425s]       |   [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[5.425s] [01m[K/opt/ros/jazzy/include/behaviortree_cpp/blackboard.h:389:13:[m[K [01;36m[Knote: [m[Kdeclared here
+[5.425s]   389 | inline bool [01;36m[KBlackboard[m[K::get(const std::string& key, T& value) const
+[5.425s]       |             [01;36m[K^~~~~~~~~~[m[K
+[28.342s] [100%] [32m[1mLinking CXX executable elevator_bt_executor[0m
+[29.929s] [100%] Built target elevator_bt_executor
+[29.950s] Invoked command in '/home/hm/ros2_ws/build/multi_floor_nav' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/hm/ros2_ws/build/multi_floor_nav -- -j12 -l12
+[29.969s] Invoking command in '/home/hm/ros2_ws/build/multi_floor_nav': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/hm/ros2_ws/build/multi_floor_nav
+[29.982s] -- Install configuration: ""
+[29.984s] -- Execute custom install script
+[29.985s] -- Up-to-date symlink: /home/hm/ros2_ws/install/multi_floor_nav/share/ament_index/resource_index/rosidl_interfaces/multi_floor_nav
+[29.986s] -- Up-to-date symlink: /home/hm/ros2_ws/install/multi_floor_nav/share/multi_floor_nav/srv/IntTrigger.json
+[29.987s] -- Up-to-date symlink: /home/hm/ros2_ws/install/multi_floor_nav/share/multi_floor_nav/msg/MissionRequest.json
+[29.990s] -- Up-to-date symlink: /home/hm/ros2_ws/install/multi_floor_nav/include/multi_floor_nav/multi_floor_nav/msg/detail/mission_request__functions.h
+[29.990s] -- Up-to-date symlink: /home/hm/ros2_ws/install/multi_floor_nav/include/multi_floor_nav/multi_floor_nav/msg/detail/mission_request__struct.h
+[29.991s] -- Up-to-date symlink: /home/hm/ros2_ws/install/multi_floor_nav/include/multi_floor_nav/multi_floor_nav/msg/detail/mission_request__type_support.h
+[29.991s] -- Up-to-date symlink: /home/hm/ros2_ws/install/multi_floor_nav/include/multi_floor_nav/multi_floor_nav/msg/mission_request.h
+[29.992s] -- Up-to-date symlink: /home/hm/ros2_ws/install/multi_floor_nav/include/multi_floor_nav/multi_floor_nav/msg/rosidl_generator_c__visibility_control.h
+[29.992s] -- Up-to-date symlink: /home/hm/ros2_ws/install/multi_floor_nav/include/multi_floor_nav/multi_floor_nav/srv/detail/int_trigger__functions.h
+[29.993s] -- Up-to-date symlink: /home/hm/ros2_ws/install/multi_floor_nav/include/multi_floor_nav/multi_floor_nav/srv/detail/int_trigger__struct.h
+[29.993s] -- Up-to-date symlink: /home/hm/ros2_ws/install/multi_floor_nav/include/multi_floor_nav/multi_floor_nav/srv/detail/int_trigger__type_support.h
+[29.994s] -- Up-to-date symlink: /home/hm/ros2_ws/install/multi_floor_nav/include/multi_floor_nav/multi_floor_nav/srv/int_trigger.h
+[29.995s] -- Up-to-date symlink: /home/hm/ros2_ws/install/multi_floor_nav/share/multi_floor_nav/environment/library_path.sh
+[29.995s] -- Up-to-date symlink: /home/hm/ros2_ws/install/multi_floor_nav/share/multi_floor_nav/environment/library_path.dsv
+[29.997s] -- Up-to-date symlink: /home/hm/ros2_ws/install/multi_floor_nav/include/multi_floor_nav/multi_floor_nav/msg/detail/mission_request__rosidl_typesupport_fastrtps_c.h
+[29.997s] -- Up-to-date symlink: /home/hm/ros2_ws/install/multi_floor_nav/include/multi_floor_nav/multi_floor_nav/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[29.997s] -- Up-to-date symlink: /home/hm/ros2_ws/install/multi_floor_nav/include/multi_floor_nav/multi_floor_nav/srv/detail/int_trigger__rosidl_typesupport_fastrtps_c.h
+[29.999s] -- Up-to-date symlink: /home/hm/ros2_ws/install/multi_floor_nav/include/multi_floor_nav/multi_floor_nav/msg/detail/mission_request__rosidl_typesupport_introspection_c.h
+[29.999s] -- Up-to-date symlink: /home/hm/ros2_ws/install/multi_floor_nav/include/multi_floor_nav/multi_floor_nav/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[29.999s] -- Up-to-date symlink: /home/hm/ros2_ws/install/multi_floor_nav/include/multi_floor_nav/multi_floor_nav/srv/detail/int_trigger__rosidl_typesupport_introspection_c.h
+[30.000s] -- Up-to-date symlink: /home/hm/ros2_ws/install/multi_floor_nav/include/multi_floor_nav/multi_floor_nav/msg/detail/mission_request__builder.hpp
+[30.001s] -- Up-to-date symlink: /home/hm/ros2_ws/install/multi_floor_nav/include/multi_floor_nav/multi_floor_nav/msg/detail/mission_request__struct.hpp
+[30.001s] -- Up-to-date symlink: /home/hm/ros2_ws/install/multi_floor_nav/include/multi_floor_nav/multi_floor_nav/msg/detail/mission_request__traits.hpp
+[30.001s] -- Up-to-date symlink: /home/hm/ros2_ws/install/multi_floor_nav/include/multi_floor_nav/multi_floor_nav/msg/detail/mission_request__type_support.hpp
+[30.001s] -- Up-to-date symlink: /home/hm/ros2_ws/install/multi_floor_nav/include/multi_floor_nav/multi_floor_nav/msg/mission_request.hpp
+[30.002s] -- Up-to-date symlink: /home/hm/ros2_ws/install/multi_floor_nav/include/multi_floor_nav/multi_floor_nav/msg/rosidl_generator_cpp__visibility_control.hpp
+[30.002s] -- Up-to-date symlink: /home/hm/ros2_ws/install/multi_floor_nav/include/multi_floor_nav/multi_floor_nav/srv/detail/int_trigger__builder.hpp
+[30.002s] -- Up-to-date symlink: /home/hm/ros2_ws/install/multi_floor_nav/include/multi_floor_nav/multi_floor_nav/srv/detail/int_trigger__struct.hpp
+[30.002s] -- Up-to-date symlink: /home/hm/ros2_ws/install/multi_floor_nav/include/multi_floor_nav/multi_floor_nav/srv/detail/int_trigger__traits.hpp
+[30.003s] -- Up-to-date symlink: /home/hm/ros2_ws/install/multi_floor_nav/include/multi_floor_nav/multi_floor_nav/srv/detail/int_trigger__type_support.hpp
+[30.003s] -- Up-to-date symlink: /home/hm/ros2_ws/install/multi_floor_nav/include/multi_floor_nav/multi_floor_nav/srv/int_trigger.hpp
+[30.005s] -- Up-to-date symlink: /home/hm/ros2_ws/install/multi_floor_nav/include/multi_floor_nav/multi_floor_nav/msg/detail/mission_request__rosidl_typesupport_fastrtps_cpp.hpp
+[30.006s] -- Up-to-date symlink: /home/hm/ros2_ws/install/multi_floor_nav/include/multi_floor_nav/multi_floor_nav/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[30.006s] -- Up-to-date symlink: /home/hm/ros2_ws/install/multi_floor_nav/include/multi_floor_nav/multi_floor_nav/srv/detail/int_trigger__rosidl_typesupport_fastrtps_cpp.hpp
+[30.007s] -- Up-to-date symlink: /home/hm/ros2_ws/install/multi_floor_nav/include/multi_floor_nav/multi_floor_nav/msg/detail/mission_request__rosidl_typesupport_introspection_cpp.hpp
+[30.008s] -- Up-to-date symlink: /home/hm/ros2_ws/install/multi_floor_nav/include/multi_floor_nav/multi_floor_nav/srv/detail/int_trigger__rosidl_typesupport_introspection_cpp.hpp
+[30.008s] -- Up-to-date symlink: /home/hm/ros2_ws/install/multi_floor_nav/share/multi_floor_nav/environment/pythonpath.sh
+[30.008s] -- Up-to-date symlink: /home/hm/ros2_ws/install/multi_floor_nav/share/multi_floor_nav/environment/pythonpath.dsv
+[30.009s] -- Up-to-date symlink: /home/hm/ros2_ws/install/multi_floor_nav/lib/python3.12/site-packages/multi_floor_nav-0.0.2-py3.12.egg-info/PKG-INFO
+[30.009s] -- Up-to-date symlink: /home/hm/ros2_ws/install/multi_floor_nav/lib/python3.12/site-packages/multi_floor_nav-0.0.2-py3.12.egg-info/SOURCES.txt
+[30.009s] -- Up-to-date symlink: /home/hm/ros2_ws/install/multi_floor_nav/lib/python3.12/site-packages/multi_floor_nav-0.0.2-py3.12.egg-info/dependency_links.txt
+[30.010s] -- Up-to-date symlink: /home/hm/ros2_ws/install/multi_floor_nav/lib/python3.12/site-packages/multi_floor_nav-0.0.2-py3.12.egg-info/top_level.txt
+[30.010s] -- Up-to-date symlink: /home/hm/ros2_ws/install/multi_floor_nav/lib/python3.12/site-packages/multi_floor_nav/__init__.py
+[30.011s] -- Up-to-date symlink: /home/hm/ros2_ws/install/multi_floor_nav/lib/python3.12/site-packages/multi_floor_nav/_multi_floor_nav_s.ep.rosidl_typesupport_c.c
+[30.011s] -- Up-to-date symlink: /home/hm/ros2_ws/install/multi_floor_nav/lib/python3.12/site-packages/multi_floor_nav/_multi_floor_nav_s.ep.rosidl_typesupport_fastrtps_c.c
+[30.012s] -- Up-to-date symlink: /home/hm/ros2_ws/install/multi_floor_nav/lib/python3.12/site-packages/multi_floor_nav/_multi_floor_nav_s.ep.rosidl_typesupport_introspection_c.c
+[30.012s] -- Up-to-date symlink: /home/hm/ros2_ws/install/multi_floor_nav/lib/python3.12/site-packages/multi_floor_nav/msg/__init__.py
+[30.012s] -- Up-to-date symlink: /home/hm/ros2_ws/install/multi_floor_nav/lib/python3.12/site-packages/multi_floor_nav/msg/_mission_request.py
+[30.013s] -- Up-to-date symlink: /home/hm/ros2_ws/install/multi_floor_nav/lib/python3.12/site-packages/multi_floor_nav/msg/_mission_request_s.c
+[30.014s] -- Up-to-date symlink: /home/hm/ros2_ws/install/multi_floor_nav/lib/python3.12/site-packages/multi_floor_nav/multi_floor_nav_s__rosidl_typesupport_c.so
+[30.014s] -- Up-to-date symlink: /home/hm/ros2_ws/install/multi_floor_nav/lib/python3.12/site-packages/multi_floor_nav/multi_floor_nav_s__rosidl_typesupport_fastrtps_c.so
+[30.014s] -- Up-to-date symlink: /home/hm/ros2_ws/install/multi_floor_nav/lib/python3.12/site-packages/multi_floor_nav/multi_floor_nav_s__rosidl_typesupport_introspection_c.so
+[30.015s] -- Up-to-date symlink: /home/hm/ros2_ws/install/multi_floor_nav/lib/python3.12/site-packages/multi_floor_nav/srv/__init__.py
+[30.015s] -- Up-to-date symlink: /home/hm/ros2_ws/install/multi_floor_nav/lib/python3.12/site-packages/multi_floor_nav/srv/_int_trigger.py
+[30.016s] -- Up-to-date symlink: /home/hm/ros2_ws/install/multi_floor_nav/lib/python3.12/site-packages/multi_floor_nav/srv/_int_trigger_s.c
+[30.017s] -- Up-to-date symlink: /home/hm/ros2_ws/install/multi_floor_nav/lib/python3.12/site-packages/multi_floor_nav/multi_floor_nav_s__rosidl_typesupport_fastrtps_c.so
+[30.017s] -- Up-to-date symlink: /home/hm/ros2_ws/install/multi_floor_nav/lib/python3.12/site-packages/multi_floor_nav/multi_floor_nav_s__rosidl_typesupport_introspection_c.so
+[30.018s] -- Up-to-date symlink: /home/hm/ros2_ws/install/multi_floor_nav/lib/python3.12/site-packages/multi_floor_nav/multi_floor_nav_s__rosidl_typesupport_c.so
+[30.018s] -- Up-to-date symlink: /home/hm/ros2_ws/install/multi_floor_nav/share/ament_index/resource_index/rust_packages/multi_floor_nav
+[30.019s] -- Up-to-date symlink: /home/hm/ros2_ws/install/multi_floor_nav/share/multi_floor_nav/rust/Cargo.toml
+[30.020s] -- Up-to-date symlink: /home/hm/ros2_ws/install/multi_floor_nav/share/multi_floor_nav/rust/build.rs
+[30.020s] -- Up-to-date symlink: /home/hm/ros2_ws/install/multi_floor_nav/share/multi_floor_nav/rust/src/lib.rs
+[30.020s] -- Up-to-date symlink: /home/hm/ros2_ws/install/multi_floor_nav/share/multi_floor_nav/rust/src/msg.rs
+[30.020s] -- Up-to-date symlink: /home/hm/ros2_ws/install/multi_floor_nav/share/multi_floor_nav/rust/src/msg/rmw.rs
+[30.021s] -- Up-to-date symlink: /home/hm/ros2_ws/install/multi_floor_nav/share/multi_floor_nav/rust/src/srv.rs
+[30.021s] -- Up-to-date symlink: /home/hm/ros2_ws/install/multi_floor_nav/share/multi_floor_nav/rust/src/srv/rmw.rs
+[30.021s] -- Up-to-date symlink: /home/hm/ros2_ws/install/multi_floor_nav/share/multi_floor_nav/srv/IntTrigger.idl
+[30.021s] -- Up-to-date symlink: /home/hm/ros2_ws/install/multi_floor_nav/share/multi_floor_nav/msg/MissionRequest.idl
+[30.022s] -- Up-to-date symlink: /home/hm/ros2_ws/install/multi_floor_nav/share/multi_floor_nav/srv/IntTrigger.srv
+[30.022s] -- Up-to-date symlink: /home/hm/ros2_ws/install/multi_floor_nav/share/multi_floor_nav/msg/MissionRequest.msg
+[30.022s] -- Up-to-date symlink: /home/hm/ros2_ws/install/multi_floor_nav/lib/multi_floor_nav/change_map_node
+[30.023s] -- Up-to-date symlink: /home/hm/ros2_ws/install/multi_floor_nav/lib/multi_floor_nav/multi_floor_navigation_node
+[30.023s] -- Up-to-date symlink: /home/hm/ros2_ws/install/multi_floor_nav/lib/multi_floor_nav/elevator_bt_executor
+[30.023s] -- Up-to-date symlink: /home/hm/ros2_ws/install/multi_floor_nav/lib/multi_floor_nav/robot_visibility_node
+[30.024s] -- Up-to-date symlink: /home/hm/ros2_ws/install/multi_floor_nav/share/multi_floor_nav/launch/mapping.launch.py
+[30.024s] -- Up-to-date symlink: /home/hm/ros2_ws/install/multi_floor_nav/share/multi_floor_nav/launch/nav.launch
+[30.025s] -- Up-to-date symlink: /home/hm/ros2_ws/install/multi_floor_nav/share/multi_floor_nav/maps/floor0.pgm
+[30.025s] -- Up-to-date symlink: /home/hm/ros2_ws/install/multi_floor_nav/share/multi_floor_nav/maps/floor0.yaml
+[30.025s] -- Up-to-date symlink: /home/hm/ros2_ws/install/multi_floor_nav/share/multi_floor_nav/maps/floor1.pgm
+[30.025s] -- Up-to-date symlink: /home/hm/ros2_ws/install/multi_floor_nav/share/multi_floor_nav/maps/floor1.yaml
+[30.026s] -- Up-to-date symlink: /home/hm/ros2_ws/install/multi_floor_nav/share/multi_floor_nav/configs/amcl.yaml
+[30.026s] -- Up-to-date symlink: /home/hm/ros2_ws/install/multi_floor_nav/share/multi_floor_nav/configs/ekf_robot1.yaml
+[30.026s] -- Up-to-date symlink: /home/hm/ros2_ws/install/multi_floor_nav/share/multi_floor_nav/configs/ekf_robot2.yaml
+[30.026s] -- Up-to-date symlink: /home/hm/ros2_ws/install/multi_floor_nav/share/multi_floor_nav/configs/nav2_default_view.rviz
+[30.026s] -- Up-to-date symlink: /home/hm/ros2_ws/install/multi_floor_nav/share/multi_floor_nav/configs/nav2_params_robot1.yaml
+[30.026s] -- Up-to-date symlink: /home/hm/ros2_ws/install/multi_floor_nav/share/multi_floor_nav/configs/nav2_params_robot2.yaml
+[30.027s] -- Up-to-date symlink: /home/hm/ros2_ws/install/multi_floor_nav/share/multi_floor_nav/configs/slam_params.yaml
+[30.027s] -- Up-to-date symlink: /home/hm/ros2_ws/install/multi_floor_nav/share/multi_floor_nav/behavior_trees/elevator_navigation.xml
+[30.027s] -- Up-to-date symlink: /home/hm/ros2_ws/install/multi_floor_nav/share/multi_floor_nav/behavior_trees/navigate_to_pose_recovery.xml
+[30.027s] -- Up-to-date symlink: /home/hm/ros2_ws/install/multi_floor_nav/share/multi_floor_nav/behavior_trees/navigate_to_pose_w_replanning_and_recovery.xml
+[30.027s] -- Up-to-date symlink: /home/hm/ros2_ws/install/multi_floor_nav/lib/multi_floor_nav/scan_reframer_node.py
+[30.027s] -- Up-to-date symlink: /home/hm/ros2_ws/install/multi_floor_nav/lib/multi_floor_nav/odom_covariance_fixer.py
+[30.028s] -- Up-to-date symlink: /home/hm/ros2_ws/install/multi_floor_nav/lib/multi_floor_nav/fleet_manager.py
+[30.029s] -- Up-to-date symlink: /home/hm/ros2_ws/install/multi_floor_nav/include//multi_floor_nav/bt_nodes/PublishFloorStatus.hpp
+[30.029s] -- Up-to-date symlink: /home/hm/ros2_ws/install/multi_floor_nav/include//multi_floor_nav/bt_nodes/cancel_navigation.hpp
+[30.029s] -- Up-to-date symlink: /home/hm/ros2_ws/install/multi_floor_nav/include//multi_floor_nav/bt_nodes/elevator_door_nodes.hpp
+[30.029s] -- Up-to-date symlink: /home/hm/ros2_ws/install/multi_floor_nav/include//multi_floor_nav/bt_nodes/elevator_move_nodes.hpp
+[30.030s] -- Up-to-date symlink: /home/hm/ros2_ws/install/multi_floor_nav/include//multi_floor_nav/bt_nodes/elevator_mqtt_nodes.hpp
+[30.030s] -- Up-to-date symlink: /home/hm/ros2_ws/install/multi_floor_nav/include//multi_floor_nav/bt_nodes/smart_spin_action.hpp
+[30.030s] -- Up-to-date symlink: /home/hm/ros2_ws/install/multi_floor_nav/include//multi_floor_nav/change_map.hpp
+[30.030s] -- Up-to-date symlink: /home/hm/ros2_ws/install/multi_floor_nav/include//multi_floor_nav/multi_floor_navigation.hpp
+[30.030s] -- Up-to-date symlink: /home/hm/ros2_ws/install/multi_floor_nav/share/ament_index/resource_index/package_run_dependencies/multi_floor_nav
+[30.030s] -- Up-to-date symlink: /home/hm/ros2_ws/install/multi_floor_nav/share/ament_index/resource_index/parent_prefix_path/multi_floor_nav
+[30.031s] -- Up-to-date symlink: /home/hm/ros2_ws/install/multi_floor_nav/share/multi_floor_nav/environment/ament_prefix_path.sh
+[30.031s] -- Up-to-date symlink: /home/hm/ros2_ws/install/multi_floor_nav/share/multi_floor_nav/environment/ament_prefix_path.dsv
+[30.031s] -- Up-to-date symlink: /home/hm/ros2_ws/install/multi_floor_nav/share/multi_floor_nav/environment/path.sh
+[30.032s] -- Up-to-date symlink: /home/hm/ros2_ws/install/multi_floor_nav/share/multi_floor_nav/environment/path.dsv
+[30.032s] -- Up-to-date symlink: /home/hm/ros2_ws/install/multi_floor_nav/share/multi_floor_nav/local_setup.bash
+[30.032s] -- Up-to-date symlink: /home/hm/ros2_ws/install/multi_floor_nav/share/multi_floor_nav/local_setup.sh
+[30.032s] -- Up-to-date symlink: /home/hm/ros2_ws/install/multi_floor_nav/share/multi_floor_nav/local_setup.zsh
+[30.033s] -- Up-to-date symlink: /home/hm/ros2_ws/install/multi_floor_nav/share/multi_floor_nav/local_setup.dsv
+[30.033s] -- Symlinking: /home/hm/ros2_ws/install/multi_floor_nav/share/multi_floor_nav/package.dsv
+[30.050s] -- Up-to-date symlink: /home/hm/ros2_ws/install/multi_floor_nav/share/ament_index/resource_index/packages/multi_floor_nav
+[30.051s] -- Up-to-date symlink: /home/hm/ros2_ws/install/multi_floor_nav/share/multi_floor_nav/cmake/rosidl_cmake-extras.cmake
+[30.051s] -- Up-to-date symlink: /home/hm/ros2_ws/install/multi_floor_nav/share/multi_floor_nav/cmake/ament_cmake_export_dependencies-extras.cmake
+[30.052s] -- Up-to-date symlink: /home/hm/ros2_ws/install/multi_floor_nav/share/multi_floor_nav/cmake/ament_cmake_export_include_directories-extras.cmake
+[30.052s] -- Up-to-date symlink: /home/hm/ros2_ws/install/multi_floor_nav/share/multi_floor_nav/cmake/ament_cmake_export_libraries-extras.cmake
+[30.052s] -- Up-to-date symlink: /home/hm/ros2_ws/install/multi_floor_nav/share/multi_floor_nav/cmake/ament_cmake_export_targets-extras.cmake
+[30.053s] -- Up-to-date symlink: /home/hm/ros2_ws/install/multi_floor_nav/share/multi_floor_nav/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[30.053s] -- Up-to-date symlink: /home/hm/ros2_ws/install/multi_floor_nav/share/multi_floor_nav/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[30.054s] -- Up-to-date symlink: /home/hm/ros2_ws/install/multi_floor_nav/share/multi_floor_nav/cmake/multi_floor_navConfig.cmake
+[30.054s] -- Up-to-date symlink: /home/hm/ros2_ws/install/multi_floor_nav/share/multi_floor_nav/cmake/multi_floor_navConfig-version.cmake
+[30.054s] -- Up-to-date symlink: /home/hm/ros2_ws/install/multi_floor_nav/share/multi_floor_nav/package.xml
+[30.055s] -- Up-to-date: /home/hm/ros2_ws/install/multi_floor_nav/lib/libmulti_floor_nav__rosidl_generator_c.so
+[30.056s] -- Up-to-date: /home/hm/ros2_ws/install/multi_floor_nav/lib/libmulti_floor_nav__rosidl_typesupport_fastrtps_c.so
+[30.057s] -- Up-to-date: /home/hm/ros2_ws/install/multi_floor_nav/lib/libmulti_floor_nav__rosidl_typesupport_introspection_c.so
+[30.058s] -- Up-to-date: /home/hm/ros2_ws/install/multi_floor_nav/lib/libmulti_floor_nav__rosidl_typesupport_c.so
+[30.059s] -- Up-to-date: /home/hm/ros2_ws/install/multi_floor_nav/lib/libmulti_floor_nav__rosidl_typesupport_fastrtps_cpp.so
+[30.060s] -- Up-to-date: /home/hm/ros2_ws/install/multi_floor_nav/lib/libmulti_floor_nav__rosidl_typesupport_introspection_cpp.so
+[30.060s] -- Up-to-date: /home/hm/ros2_ws/install/multi_floor_nav/lib/libmulti_floor_nav__rosidl_typesupport_cpp.so
+[30.115s] Listing '/home/hm/ros2_ws/install/multi_floor_nav/lib/python3.12/site-packages/multi_floor_nav'...
+[30.115s] Listing '/home/hm/ros2_ws/install/multi_floor_nav/lib/python3.12/site-packages/multi_floor_nav/msg'...
+[30.115s] Listing '/home/hm/ros2_ws/install/multi_floor_nav/lib/python3.12/site-packages/multi_floor_nav/srv'...
+[30.123s] -- Up-to-date: /home/hm/ros2_ws/install/multi_floor_nav/lib/libmulti_floor_nav__rosidl_generator_py.so
+[30.124s] -- Up-to-date: /home/hm/ros2_ws/install/multi_floor_nav/share/multi_floor_nav/cmake/export_multi_floor_nav__rosidl_generator_cExport.cmake
+[30.124s] -- Up-to-date: /home/hm/ros2_ws/install/multi_floor_nav/share/multi_floor_nav/cmake/export_multi_floor_nav__rosidl_generator_cExport-noconfig.cmake
+[30.124s] -- Up-to-date: /home/hm/ros2_ws/install/multi_floor_nav/share/multi_floor_nav/cmake/export_multi_floor_nav__rosidl_typesupport_fastrtps_cExport.cmake
+[30.125s] -- Up-to-date: /home/hm/ros2_ws/install/multi_floor_nav/share/multi_floor_nav/cmake/export_multi_floor_nav__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[30.125s] -- Up-to-date: /home/hm/ros2_ws/install/multi_floor_nav/share/multi_floor_nav/cmake/multi_floor_nav__rosidl_typesupport_introspection_cExport.cmake
+[30.125s] -- Up-to-date: /home/hm/ros2_ws/install/multi_floor_nav/share/multi_floor_nav/cmake/multi_floor_nav__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[30.125s] -- Up-to-date: /home/hm/ros2_ws/install/multi_floor_nav/share/multi_floor_nav/cmake/multi_floor_nav__rosidl_typesupport_cExport.cmake
+[30.125s] -- Up-to-date: /home/hm/ros2_ws/install/multi_floor_nav/share/multi_floor_nav/cmake/multi_floor_nav__rosidl_typesupport_cExport-noconfig.cmake
+[30.125s] -- Up-to-date: /home/hm/ros2_ws/install/multi_floor_nav/share/multi_floor_nav/cmake/export_multi_floor_nav__rosidl_generator_cppExport.cmake
+[30.126s] -- Up-to-date: /home/hm/ros2_ws/install/multi_floor_nav/share/multi_floor_nav/cmake/export_multi_floor_nav__rosidl_typesupport_fastrtps_cppExport.cmake
+[30.126s] -- Up-to-date: /home/hm/ros2_ws/install/multi_floor_nav/share/multi_floor_nav/cmake/export_multi_floor_nav__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[30.126s] -- Up-to-date: /home/hm/ros2_ws/install/multi_floor_nav/share/multi_floor_nav/cmake/multi_floor_nav__rosidl_typesupport_introspection_cppExport.cmake
+[30.126s] -- Up-to-date: /home/hm/ros2_ws/install/multi_floor_nav/share/multi_floor_nav/cmake/multi_floor_nav__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[30.126s] -- Up-to-date: /home/hm/ros2_ws/install/multi_floor_nav/share/multi_floor_nav/cmake/multi_floor_nav__rosidl_typesupport_cppExport.cmake
+[30.127s] -- Up-to-date: /home/hm/ros2_ws/install/multi_floor_nav/share/multi_floor_nav/cmake/multi_floor_nav__rosidl_typesupport_cppExport-noconfig.cmake
+[30.127s] -- Up-to-date: /home/hm/ros2_ws/install/multi_floor_nav/share/multi_floor_nav/cmake/export_multi_floor_nav__rosidl_generator_pyExport.cmake
+[30.127s] -- Up-to-date: /home/hm/ros2_ws/install/multi_floor_nav/share/multi_floor_nav/cmake/export_multi_floor_nav__rosidl_generator_pyExport-noconfig.cmake
+[30.130s] Invoked command in '/home/hm/ros2_ws/build/multi_floor_nav' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/hm/ros2_ws/build/multi_floor_nav

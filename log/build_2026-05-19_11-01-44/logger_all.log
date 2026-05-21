@@ -1,0 +1,353 @@
+[0.289s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.289s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=12, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x79c3e6ba5eb0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x79c3e6ba5be0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x79c3e6ba5be0>>, mixin_verb=('build',))
+[0.395s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.395s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.395s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.395s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.395s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.396s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.396s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/hm/ros2_ws'
+[0.396s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.396s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.396s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.397s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.397s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.397s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.397s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.397s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.397s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.441s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.441s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.441s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.441s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.441s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.441s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.442s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.442s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.442s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.442s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.442s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.442s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.442s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.442s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.442s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.442s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.442s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.443s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.443s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.443s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.443s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.443s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.443s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.443s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.443s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.443s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.443s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.443s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.443s] Level 1:colcon.colcon_core.package_identification:_identify(src/build) by extensions ['ignore', 'ignore_ament_install']
+[0.444s] Level 1:colcon.colcon_core.package_identification:_identify(src/build) by extension 'ignore'
+[0.444s] Level 1:colcon.colcon_core.package_identification:_identify(src/build) ignored
+[0.444s] Level 1:colcon.colcon_core.package_identification:_identify(src/jackal_elevator) by extensions ['ignore', 'ignore_ament_install']
+[0.444s] Level 1:colcon.colcon_core.package_identification:_identify(src/jackal_elevator) by extension 'ignore'
+[0.444s] Level 1:colcon.colcon_core.package_identification:_identify(src/jackal_elevator) by extension 'ignore_ament_install'
+[0.445s] Level 1:colcon.colcon_core.package_identification:_identify(src/jackal_elevator) by extensions ['colcon_pkg']
+[0.445s] Level 1:colcon.colcon_core.package_identification:_identify(src/jackal_elevator) by extension 'colcon_pkg'
+[0.445s] Level 1:colcon.colcon_core.package_identification:_identify(src/jackal_elevator) by extensions ['colcon_meta']
+[0.445s] Level 1:colcon.colcon_core.package_identification:_identify(src/jackal_elevator) by extension 'colcon_meta'
+[0.445s] Level 1:colcon.colcon_core.package_identification:_identify(src/jackal_elevator) by extensions ['ros']
+[0.445s] Level 1:colcon.colcon_core.package_identification:_identify(src/jackal_elevator) by extension 'ros'
+[0.449s] DEBUG:colcon.colcon_core.package_identification:Package 'src/jackal_elevator' with type 'ros.ament_cmake' and name 'jackal_elevator'
+[0.449s] Level 1:colcon.colcon_core.package_identification:_identify(src/log) by extensions ['ignore', 'ignore_ament_install']
+[0.449s] Level 1:colcon.colcon_core.package_identification:_identify(src/log) by extension 'ignore'
+[0.450s] Level 1:colcon.colcon_core.package_identification:_identify(src/log) ignored
+[0.450s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot-multi-floor-navigation) by extensions ['ignore', 'ignore_ament_install']
+[0.450s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot-multi-floor-navigation) by extension 'ignore'
+[0.450s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot-multi-floor-navigation) by extension 'ignore_ament_install'
+[0.450s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot-multi-floor-navigation) by extensions ['colcon_pkg']
+[0.450s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot-multi-floor-navigation) by extension 'colcon_pkg'
+[0.450s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot-multi-floor-navigation) by extensions ['colcon_meta']
+[0.450s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot-multi-floor-navigation) by extension 'colcon_meta'
+[0.450s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot-multi-floor-navigation) by extensions ['ros']
+[0.450s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot-multi-floor-navigation) by extension 'ros'
+[0.450s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot-multi-floor-navigation) by extensions ['cmake', 'python']
+[0.450s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot-multi-floor-navigation) by extension 'cmake'
+[0.450s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot-multi-floor-navigation) by extension 'python'
+[0.450s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot-multi-floor-navigation) by extensions ['python_setup_py']
+[0.451s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot-multi-floor-navigation) by extension 'python_setup_py'
+[0.451s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot-multi-floor-navigation/docs) by extensions ['ignore', 'ignore_ament_install']
+[0.451s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot-multi-floor-navigation/docs) by extension 'ignore'
+[0.451s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot-multi-floor-navigation/docs) by extension 'ignore_ament_install'
+[0.452s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot-multi-floor-navigation/docs) by extensions ['colcon_pkg']
+[0.452s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot-multi-floor-navigation/docs) by extension 'colcon_pkg'
+[0.452s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot-multi-floor-navigation/docs) by extensions ['colcon_meta']
+[0.452s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot-multi-floor-navigation/docs) by extension 'colcon_meta'
+[0.452s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot-multi-floor-navigation/docs) by extensions ['ros']
+[0.452s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot-multi-floor-navigation/docs) by extension 'ros'
+[0.452s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot-multi-floor-navigation/docs) by extensions ['cmake', 'python']
+[0.452s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot-multi-floor-navigation/docs) by extension 'cmake'
+[0.452s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot-multi-floor-navigation/docs) by extension 'python'
+[0.452s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot-multi-floor-navigation/docs) by extensions ['python_setup_py']
+[0.452s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot-multi-floor-navigation/docs) by extension 'python_setup_py'
+[0.452s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot-multi-floor-navigation/multi_floor_nav) by extensions ['ignore', 'ignore_ament_install']
+[0.452s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot-multi-floor-navigation/multi_floor_nav) by extension 'ignore'
+[0.452s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot-multi-floor-navigation/multi_floor_nav) by extension 'ignore_ament_install'
+[0.452s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot-multi-floor-navigation/multi_floor_nav) by extensions ['colcon_pkg']
+[0.452s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot-multi-floor-navigation/multi_floor_nav) by extension 'colcon_pkg'
+[0.453s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot-multi-floor-navigation/multi_floor_nav) by extensions ['colcon_meta']
+[0.453s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot-multi-floor-navigation/multi_floor_nav) by extension 'colcon_meta'
+[0.453s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot-multi-floor-navigation/multi_floor_nav) by extensions ['ros']
+[0.453s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot-multi-floor-navigation/multi_floor_nav) by extension 'ros'
+[0.455s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robot-multi-floor-navigation/multi_floor_nav' with type 'ros.ament_cmake' and name 'multi_floor_nav'
+[0.455s] Level 1:colcon.colcon_core.package_identification:_identify(venv) by extensions ['ignore', 'ignore_ament_install']
+[0.455s] Level 1:colcon.colcon_core.package_identification:_identify(venv) by extension 'ignore'
+[0.455s] Level 1:colcon.colcon_core.package_identification:_identify(venv) by extension 'ignore_ament_install'
+[0.455s] Level 1:colcon.colcon_core.package_identification:_identify(venv) by extensions ['colcon_pkg']
+[0.455s] Level 1:colcon.colcon_core.package_identification:_identify(venv) by extension 'colcon_pkg'
+[0.455s] Level 1:colcon.colcon_core.package_identification:_identify(venv) by extensions ['colcon_meta']
+[0.456s] Level 1:colcon.colcon_core.package_identification:_identify(venv) by extension 'colcon_meta'
+[0.456s] Level 1:colcon.colcon_core.package_identification:_identify(venv) by extensions ['ros']
+[0.456s] Level 1:colcon.colcon_core.package_identification:_identify(venv) by extension 'ros'
+[0.456s] Level 1:colcon.colcon_core.package_identification:_identify(venv) by extensions ['cmake', 'python']
+[0.456s] Level 1:colcon.colcon_core.package_identification:_identify(venv) by extension 'cmake'
+[0.456s] Level 1:colcon.colcon_core.package_identification:_identify(venv) by extension 'python'
+[0.456s] Level 1:colcon.colcon_core.package_identification:_identify(venv) by extensions ['python_setup_py']
+[0.456s] Level 1:colcon.colcon_core.package_identification:_identify(venv) by extension 'python_setup_py'
+[0.456s] Level 1:colcon.colcon_core.package_identification:_identify(venv/bin) by extensions ['ignore', 'ignore_ament_install']
+[0.456s] Level 1:colcon.colcon_core.package_identification:_identify(venv/bin) by extension 'ignore'
+[0.456s] Level 1:colcon.colcon_core.package_identification:_identify(venv/bin) by extension 'ignore_ament_install'
+[0.456s] Level 1:colcon.colcon_core.package_identification:_identify(venv/bin) by extensions ['colcon_pkg']
+[0.456s] Level 1:colcon.colcon_core.package_identification:_identify(venv/bin) by extension 'colcon_pkg'
+[0.456s] Level 1:colcon.colcon_core.package_identification:_identify(venv/bin) by extensions ['colcon_meta']
+[0.456s] Level 1:colcon.colcon_core.package_identification:_identify(venv/bin) by extension 'colcon_meta'
+[0.456s] Level 1:colcon.colcon_core.package_identification:_identify(venv/bin) by extensions ['ros']
+[0.456s] Level 1:colcon.colcon_core.package_identification:_identify(venv/bin) by extension 'ros'
+[0.457s] Level 1:colcon.colcon_core.package_identification:_identify(venv/bin) by extensions ['cmake', 'python']
+[0.457s] Level 1:colcon.colcon_core.package_identification:_identify(venv/bin) by extension 'cmake'
+[0.457s] Level 1:colcon.colcon_core.package_identification:_identify(venv/bin) by extension 'python'
+[0.457s] Level 1:colcon.colcon_core.package_identification:_identify(venv/bin) by extensions ['python_setup_py']
+[0.457s] Level 1:colcon.colcon_core.package_identification:_identify(venv/bin) by extension 'python_setup_py'
+[0.457s] Level 1:colcon.colcon_core.package_identification:_identify(venv/include) by extensions ['ignore', 'ignore_ament_install']
+[0.457s] Level 1:colcon.colcon_core.package_identification:_identify(venv/include) by extension 'ignore'
+[0.457s] Level 1:colcon.colcon_core.package_identification:_identify(venv/include) by extension 'ignore_ament_install'
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(venv/include) by extensions ['colcon_pkg']
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(venv/include) by extension 'colcon_pkg'
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(venv/include) by extensions ['colcon_meta']
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(venv/include) by extension 'colcon_meta'
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(venv/include) by extensions ['ros']
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(venv/include) by extension 'ros'
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(venv/include) by extensions ['cmake', 'python']
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(venv/include) by extension 'cmake'
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(venv/include) by extension 'python'
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(venv/include) by extensions ['python_setup_py']
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(venv/include) by extension 'python_setup_py'
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(venv/include/python3.12) by extensions ['ignore', 'ignore_ament_install']
+[0.459s] Level 1:colcon.colcon_core.package_identification:_identify(venv/include/python3.12) by extension 'ignore'
+[0.459s] Level 1:colcon.colcon_core.package_identification:_identify(venv/include/python3.12) by extension 'ignore_ament_install'
+[0.459s] Level 1:colcon.colcon_core.package_identification:_identify(venv/include/python3.12) by extensions ['colcon_pkg']
+[0.459s] Level 1:colcon.colcon_core.package_identification:_identify(venv/include/python3.12) by extension 'colcon_pkg'
+[0.459s] Level 1:colcon.colcon_core.package_identification:_identify(venv/include/python3.12) by extensions ['colcon_meta']
+[0.459s] Level 1:colcon.colcon_core.package_identification:_identify(venv/include/python3.12) by extension 'colcon_meta'
+[0.459s] Level 1:colcon.colcon_core.package_identification:_identify(venv/include/python3.12) by extensions ['ros']
+[0.459s] Level 1:colcon.colcon_core.package_identification:_identify(venv/include/python3.12) by extension 'ros'
+[0.459s] Level 1:colcon.colcon_core.package_identification:_identify(venv/include/python3.12) by extensions ['cmake', 'python']
+[0.459s] Level 1:colcon.colcon_core.package_identification:_identify(venv/include/python3.12) by extension 'cmake'
+[0.459s] Level 1:colcon.colcon_core.package_identification:_identify(venv/include/python3.12) by extension 'python'
+[0.459s] Level 1:colcon.colcon_core.package_identification:_identify(venv/include/python3.12) by extensions ['python_setup_py']
+[0.459s] Level 1:colcon.colcon_core.package_identification:_identify(venv/include/python3.12) by extension 'python_setup_py'
+[0.460s] Level 1:colcon.colcon_core.package_identification:_identify(venv/lib) by extensions ['ignore', 'ignore_ament_install']
+[0.460s] Level 1:colcon.colcon_core.package_identification:_identify(venv/lib) by extension 'ignore'
+[0.460s] Level 1:colcon.colcon_core.package_identification:_identify(venv/lib) by extension 'ignore_ament_install'
+[0.460s] Level 1:colcon.colcon_core.package_identification:_identify(venv/lib) by extensions ['colcon_pkg']
+[0.460s] Level 1:colcon.colcon_core.package_identification:_identify(venv/lib) by extension 'colcon_pkg'
+[0.460s] Level 1:colcon.colcon_core.package_identification:_identify(venv/lib) by extensions ['colcon_meta']
+[0.460s] Level 1:colcon.colcon_core.package_identification:_identify(venv/lib) by extension 'colcon_meta'
+[0.460s] Level 1:colcon.colcon_core.package_identification:_identify(venv/lib) by extensions ['ros']
+[0.460s] Level 1:colcon.colcon_core.package_identification:_identify(venv/lib) by extension 'ros'
+[0.460s] Level 1:colcon.colcon_core.package_identification:_identify(venv/lib) by extensions ['cmake', 'python']
+[0.460s] Level 1:colcon.colcon_core.package_identification:_identify(venv/lib) by extension 'cmake'
+[0.460s] Level 1:colcon.colcon_core.package_identification:_identify(venv/lib) by extension 'python'
+[0.460s] Level 1:colcon.colcon_core.package_identification:_identify(venv/lib) by extensions ['python_setup_py']
+[0.460s] Level 1:colcon.colcon_core.package_identification:_identify(venv/lib) by extension 'python_setup_py'
+[0.461s] Level 1:colcon.colcon_core.package_identification:_identify(venv/lib/python3.12) by extensions ['ignore', 'ignore_ament_install']
+[0.461s] Level 1:colcon.colcon_core.package_identification:_identify(venv/lib/python3.12) by extension 'ignore'
+[0.461s] Level 1:colcon.colcon_core.package_identification:_identify(venv/lib/python3.12) by extension 'ignore_ament_install'
+[0.461s] Level 1:colcon.colcon_core.package_identification:_identify(venv/lib/python3.12) by extensions ['colcon_pkg']
+[0.461s] Level 1:colcon.colcon_core.package_identification:_identify(venv/lib/python3.12) by extension 'colcon_pkg'
+[0.461s] Level 1:colcon.colcon_core.package_identification:_identify(venv/lib/python3.12) by extensions ['colcon_meta']
+[0.461s] Level 1:colcon.colcon_core.package_identification:_identify(venv/lib/python3.12) by extension 'colcon_meta'
+[0.461s] Level 1:colcon.colcon_core.package_identification:_identify(venv/lib/python3.12) by extensions ['ros']
+[0.461s] Level 1:colcon.colcon_core.package_identification:_identify(venv/lib/python3.12) by extension 'ros'
+[0.462s] Level 1:colcon.colcon_core.package_identification:_identify(venv/lib/python3.12) by extensions ['cmake', 'python']
+[0.462s] Level 1:colcon.colcon_core.package_identification:_identify(venv/lib/python3.12) by extension 'cmake'
+[0.462s] Level 1:colcon.colcon_core.package_identification:_identify(venv/lib/python3.12) by extension 'python'
+[0.462s] Level 1:colcon.colcon_core.package_identification:_identify(venv/lib/python3.12) by extensions ['python_setup_py']
+[0.462s] Level 1:colcon.colcon_core.package_identification:_identify(venv/lib/python3.12) by extension 'python_setup_py'
+[0.462s] Level 1:colcon.colcon_core.package_identification:_identify(venv/lib/python3.12/site-packages) by extensions ['ignore', 'ignore_ament_install']
+[0.462s] Level 1:colcon.colcon_core.package_identification:_identify(venv/lib/python3.12/site-packages) by extension 'ignore'
+[0.462s] Level 1:colcon.colcon_core.package_identification:_identify(venv/lib/python3.12/site-packages) by extension 'ignore_ament_install'
+[0.462s] Level 1:colcon.colcon_core.package_identification:_identify(venv/lib/python3.12/site-packages) by extensions ['colcon_pkg']
+[0.462s] Level 1:colcon.colcon_core.package_identification:_identify(venv/lib/python3.12/site-packages) by extension 'colcon_pkg'
+[0.462s] Level 1:colcon.colcon_core.package_identification:_identify(venv/lib/python3.12/site-packages) by extensions ['colcon_meta']
+[0.462s] Level 1:colcon.colcon_core.package_identification:_identify(venv/lib/python3.12/site-packages) by extension 'colcon_meta'
+[0.463s] Level 1:colcon.colcon_core.package_identification:_identify(venv/lib/python3.12/site-packages) by extensions ['ros']
+[0.463s] Level 1:colcon.colcon_core.package_identification:_identify(venv/lib/python3.12/site-packages) by extension 'ros'
+[0.463s] Level 1:colcon.colcon_core.package_identification:_identify(venv/lib/python3.12/site-packages) by extensions ['cmake', 'python']
+[0.463s] Level 1:colcon.colcon_core.package_identification:_identify(venv/lib/python3.12/site-packages) by extension 'cmake'
+[0.463s] Level 1:colcon.colcon_core.package_identification:_identify(venv/lib/python3.12/site-packages) by extension 'python'
+[0.463s] Level 1:colcon.colcon_core.package_identification:_identify(venv/lib/python3.12/site-packages) by extensions ['python_setup_py']
+[0.463s] Level 1:colcon.colcon_core.package_identification:_identify(venv/lib/python3.12/site-packages) by extension 'python_setup_py'
+[0.463s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.463s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.463s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.463s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.463s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.506s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.506s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.520s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 2 installed packages in /home/hm/ros2_ws/install
+[0.526s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 416 installed packages in /opt/ros/jazzy
+[0.529s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.759s] Level 5:colcon.colcon_core.verb:set package 'multi_floor_nav' build argument 'cmake_args' from command line to 'None'
+[0.759s] Level 5:colcon.colcon_core.verb:set package 'multi_floor_nav' build argument 'cmake_target' from command line to 'None'
+[0.759s] Level 5:colcon.colcon_core.verb:set package 'multi_floor_nav' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.759s] Level 5:colcon.colcon_core.verb:set package 'multi_floor_nav' build argument 'cmake_clean_cache' from command line to 'False'
+[0.759s] Level 5:colcon.colcon_core.verb:set package 'multi_floor_nav' build argument 'cmake_clean_first' from command line to 'False'
+[0.759s] Level 5:colcon.colcon_core.verb:set package 'multi_floor_nav' build argument 'cmake_force_configure' from command line to 'False'
+[0.759s] Level 5:colcon.colcon_core.verb:set package 'multi_floor_nav' build argument 'ament_cmake_args' from command line to 'None'
+[0.759s] Level 5:colcon.colcon_core.verb:set package 'multi_floor_nav' build argument 'catkin_cmake_args' from command line to 'None'
+[0.759s] Level 5:colcon.colcon_core.verb:set package 'multi_floor_nav' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.759s] DEBUG:colcon.colcon_core.verb:Building package 'multi_floor_nav' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/hm/ros2_ws/build/multi_floor_nav', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/hm/ros2_ws/install/multi_floor_nav', 'merge_install': False, 'path': '/home/hm/ros2_ws/src/robot-multi-floor-navigation/multi_floor_nav', 'symlink_install': False, 'test_result_base': None}
+[0.759s] Level 5:colcon.colcon_core.verb:set package 'jackal_elevator' build argument 'cmake_args' from command line to 'None'
+[0.759s] Level 5:colcon.colcon_core.verb:set package 'jackal_elevator' build argument 'cmake_target' from command line to 'None'
+[0.759s] Level 5:colcon.colcon_core.verb:set package 'jackal_elevator' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.759s] Level 5:colcon.colcon_core.verb:set package 'jackal_elevator' build argument 'cmake_clean_cache' from command line to 'False'
+[0.759s] Level 5:colcon.colcon_core.verb:set package 'jackal_elevator' build argument 'cmake_clean_first' from command line to 'False'
+[0.759s] Level 5:colcon.colcon_core.verb:set package 'jackal_elevator' build argument 'cmake_force_configure' from command line to 'False'
+[0.759s] Level 5:colcon.colcon_core.verb:set package 'jackal_elevator' build argument 'ament_cmake_args' from command line to 'None'
+[0.759s] Level 5:colcon.colcon_core.verb:set package 'jackal_elevator' build argument 'catkin_cmake_args' from command line to 'None'
+[0.759s] Level 5:colcon.colcon_core.verb:set package 'jackal_elevator' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.759s] DEBUG:colcon.colcon_core.verb:Building package 'jackal_elevator' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/hm/ros2_ws/build/jackal_elevator', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/hm/ros2_ws/install/jackal_elevator', 'merge_install': False, 'path': '/home/hm/ros2_ws/src/jackal_elevator', 'symlink_install': False, 'test_result_base': None}
+[0.760s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.761s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.762s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/hm/ros2_ws/src/robot-multi-floor-navigation/multi_floor_nav' with build type 'ament_cmake'
+[0.762s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/hm/ros2_ws/src/robot-multi-floor-navigation/multi_floor_nav'
+[0.772s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.773s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.773s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.793s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hm/ros2_ws/build/multi_floor_nav': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/hm/ros2_ws/build/multi_floor_nav -- -j12 -l12
+[1.638s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hm/ros2_ws/build/multi_floor_nav' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/hm/ros2_ws/build/multi_floor_nav -- -j12 -l12
+[1.655s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hm/ros2_ws/build/multi_floor_nav': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/hm/ros2_ws/build/multi_floor_nav
+[1.846s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(multi_floor_nav)
+[1.847s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hm/ros2_ws/build/multi_floor_nav' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/hm/ros2_ws/build/multi_floor_nav
+[1.853s] Level 1:colcon.colcon_core.environment:checking '/home/hm/ros2_ws/install/multi_floor_nav' for CMake module files
+[1.855s] Level 1:colcon.colcon_core.environment:checking '/home/hm/ros2_ws/install/multi_floor_nav' for CMake config files
+[1.856s] Level 1:colcon.colcon_core.shell:create_environment_hook('multi_floor_nav', 'cmake_prefix_path')
+[1.857s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hm/ros2_ws/install/multi_floor_nav/share/multi_floor_nav/hook/cmake_prefix_path.ps1'
+[1.858s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hm/ros2_ws/install/multi_floor_nav/share/multi_floor_nav/hook/cmake_prefix_path.dsv'
+[1.859s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hm/ros2_ws/install/multi_floor_nav/share/multi_floor_nav/hook/cmake_prefix_path.sh'
+[1.860s] Level 1:colcon.colcon_core.environment:checking '/home/hm/ros2_ws/install/multi_floor_nav/lib'
+[1.861s] Level 1:colcon.colcon_core.shell:create_environment_hook('multi_floor_nav', 'ld_library_path_lib')
+[1.861s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hm/ros2_ws/install/multi_floor_nav/share/multi_floor_nav/hook/ld_library_path_lib.ps1'
+[1.862s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hm/ros2_ws/install/multi_floor_nav/share/multi_floor_nav/hook/ld_library_path_lib.dsv'
+[1.862s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hm/ros2_ws/install/multi_floor_nav/share/multi_floor_nav/hook/ld_library_path_lib.sh'
+[1.863s] Level 1:colcon.colcon_core.environment:checking '/home/hm/ros2_ws/install/multi_floor_nav/bin'
+[1.863s] Level 1:colcon.colcon_core.environment:checking '/home/hm/ros2_ws/install/multi_floor_nav/lib/pkgconfig/multi_floor_nav.pc'
+[1.863s] Level 1:colcon.colcon_core.environment:checking '/home/hm/ros2_ws/install/multi_floor_nav/lib/python3.12/site-packages'
+[1.864s] Level 1:colcon.colcon_core.shell:create_environment_hook('multi_floor_nav', 'pythonpath')
+[1.864s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hm/ros2_ws/install/multi_floor_nav/share/multi_floor_nav/hook/pythonpath.ps1'
+[1.864s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hm/ros2_ws/install/multi_floor_nav/share/multi_floor_nav/hook/pythonpath.dsv'
+[1.865s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hm/ros2_ws/install/multi_floor_nav/share/multi_floor_nav/hook/pythonpath.sh'
+[1.866s] Level 1:colcon.colcon_core.environment:checking '/home/hm/ros2_ws/install/multi_floor_nav/bin'
+[1.866s] INFO:colcon.colcon_core.shell:Creating package script '/home/hm/ros2_ws/install/multi_floor_nav/share/multi_floor_nav/package.ps1'
+[1.868s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/hm/ros2_ws/install/multi_floor_nav/share/multi_floor_nav/package.dsv'
+[1.869s] INFO:colcon.colcon_core.shell:Creating package script '/home/hm/ros2_ws/install/multi_floor_nav/share/multi_floor_nav/package.sh'
+[1.870s] INFO:colcon.colcon_core.shell:Creating package script '/home/hm/ros2_ws/install/multi_floor_nav/share/multi_floor_nav/package.bash'
+[1.871s] INFO:colcon.colcon_core.shell:Creating package script '/home/hm/ros2_ws/install/multi_floor_nav/share/multi_floor_nav/package.zsh'
+[1.872s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/hm/ros2_ws/install/multi_floor_nav/share/colcon-core/packages/multi_floor_nav)
+[1.873s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(multi_floor_nav)
+[1.874s] Level 1:colcon.colcon_core.environment:checking '/home/hm/ros2_ws/install/multi_floor_nav' for CMake module files
+[1.875s] Level 1:colcon.colcon_core.environment:checking '/home/hm/ros2_ws/install/multi_floor_nav' for CMake config files
+[1.876s] Level 1:colcon.colcon_core.shell:create_environment_hook('multi_floor_nav', 'cmake_prefix_path')
+[1.876s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hm/ros2_ws/install/multi_floor_nav/share/multi_floor_nav/hook/cmake_prefix_path.ps1'
+[1.877s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hm/ros2_ws/install/multi_floor_nav/share/multi_floor_nav/hook/cmake_prefix_path.dsv'
+[1.877s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hm/ros2_ws/install/multi_floor_nav/share/multi_floor_nav/hook/cmake_prefix_path.sh'
+[1.878s] Level 1:colcon.colcon_core.environment:checking '/home/hm/ros2_ws/install/multi_floor_nav/lib'
+[1.878s] Level 1:colcon.colcon_core.shell:create_environment_hook('multi_floor_nav', 'ld_library_path_lib')
+[1.878s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hm/ros2_ws/install/multi_floor_nav/share/multi_floor_nav/hook/ld_library_path_lib.ps1'
+[1.879s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hm/ros2_ws/install/multi_floor_nav/share/multi_floor_nav/hook/ld_library_path_lib.dsv'
+[1.879s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hm/ros2_ws/install/multi_floor_nav/share/multi_floor_nav/hook/ld_library_path_lib.sh'
+[1.880s] Level 1:colcon.colcon_core.environment:checking '/home/hm/ros2_ws/install/multi_floor_nav/bin'
+[1.880s] Level 1:colcon.colcon_core.environment:checking '/home/hm/ros2_ws/install/multi_floor_nav/lib/pkgconfig/multi_floor_nav.pc'
+[1.880s] Level 1:colcon.colcon_core.environment:checking '/home/hm/ros2_ws/install/multi_floor_nav/lib/python3.12/site-packages'
+[1.880s] Level 1:colcon.colcon_core.shell:create_environment_hook('multi_floor_nav', 'pythonpath')
+[1.880s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hm/ros2_ws/install/multi_floor_nav/share/multi_floor_nav/hook/pythonpath.ps1'
+[1.881s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hm/ros2_ws/install/multi_floor_nav/share/multi_floor_nav/hook/pythonpath.dsv'
+[1.882s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hm/ros2_ws/install/multi_floor_nav/share/multi_floor_nav/hook/pythonpath.sh'
+[1.883s] Level 1:colcon.colcon_core.environment:checking '/home/hm/ros2_ws/install/multi_floor_nav/bin'
+[1.883s] INFO:colcon.colcon_core.shell:Creating package script '/home/hm/ros2_ws/install/multi_floor_nav/share/multi_floor_nav/package.ps1'
+[1.884s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/hm/ros2_ws/install/multi_floor_nav/share/multi_floor_nav/package.dsv'
+[1.884s] INFO:colcon.colcon_core.shell:Creating package script '/home/hm/ros2_ws/install/multi_floor_nav/share/multi_floor_nav/package.sh'
+[1.885s] INFO:colcon.colcon_core.shell:Creating package script '/home/hm/ros2_ws/install/multi_floor_nav/share/multi_floor_nav/package.bash'
+[1.885s] INFO:colcon.colcon_core.shell:Creating package script '/home/hm/ros2_ws/install/multi_floor_nav/share/multi_floor_nav/package.zsh'
+[1.885s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/hm/ros2_ws/install/multi_floor_nav/share/colcon-core/packages/multi_floor_nav)
+[1.886s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/hm/ros2_ws/src/jackal_elevator' with build type 'ament_cmake'
+[1.886s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/hm/ros2_ws/src/jackal_elevator'
+[1.887s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.887s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.910s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hm/ros2_ws/build/jackal_elevator': CMAKE_PREFIX_PATH=/home/hm/ros2_ws/install/multi_floor_nav:/home/hm/ros2_ws/install/jackal_elevator:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/hm/ros2_ws/build/jackal_elevator -- -j12 -l12
+[1.972s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hm/ros2_ws/build/jackal_elevator' returned '0': CMAKE_PREFIX_PATH=/home/hm/ros2_ws/install/multi_floor_nav:/home/hm/ros2_ws/install/jackal_elevator:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/hm/ros2_ws/build/jackal_elevator -- -j12 -l12
+[1.974s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hm/ros2_ws/build/jackal_elevator': CMAKE_PREFIX_PATH=/home/hm/ros2_ws/install/multi_floor_nav:/home/hm/ros2_ws/install/jackal_elevator:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/hm/ros2_ws/build/jackal_elevator
+[2.701s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(jackal_elevator)
+[2.702s] Level 1:colcon.colcon_core.environment:checking '/home/hm/ros2_ws/install/jackal_elevator' for CMake module files
+[2.703s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hm/ros2_ws/build/jackal_elevator' returned '0': CMAKE_PREFIX_PATH=/home/hm/ros2_ws/install/multi_floor_nav:/home/hm/ros2_ws/install/jackal_elevator:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/hm/ros2_ws/build/jackal_elevator
+[2.704s] Level 1:colcon.colcon_core.environment:checking '/home/hm/ros2_ws/install/jackal_elevator' for CMake config files
+[2.807s] Level 1:colcon.colcon_core.shell:create_environment_hook('jackal_elevator', 'cmake_prefix_path')
+[2.807s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hm/ros2_ws/install/jackal_elevator/share/jackal_elevator/hook/cmake_prefix_path.ps1'
+[2.808s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hm/ros2_ws/install/jackal_elevator/share/jackal_elevator/hook/cmake_prefix_path.dsv'
+[2.808s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hm/ros2_ws/install/jackal_elevator/share/jackal_elevator/hook/cmake_prefix_path.sh'
+[2.809s] Level 1:colcon.colcon_core.environment:checking '/home/hm/ros2_ws/install/jackal_elevator/lib'
+[2.809s] Level 1:colcon.colcon_core.environment:checking '/home/hm/ros2_ws/install/jackal_elevator/bin'
+[2.809s] Level 1:colcon.colcon_core.environment:checking '/home/hm/ros2_ws/install/jackal_elevator/lib/pkgconfig/jackal_elevator.pc'
+[2.810s] Level 1:colcon.colcon_core.environment:checking '/home/hm/ros2_ws/install/jackal_elevator/lib/python3.12/site-packages'
+[2.810s] Level 1:colcon.colcon_core.environment:checking '/home/hm/ros2_ws/install/jackal_elevator/bin'
+[2.810s] INFO:colcon.colcon_core.shell:Creating package script '/home/hm/ros2_ws/install/jackal_elevator/share/jackal_elevator/package.ps1'
+[2.811s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/hm/ros2_ws/install/jackal_elevator/share/jackal_elevator/package.dsv'
+[2.811s] INFO:colcon.colcon_core.shell:Creating package script '/home/hm/ros2_ws/install/jackal_elevator/share/jackal_elevator/package.sh'
+[2.812s] INFO:colcon.colcon_core.shell:Creating package script '/home/hm/ros2_ws/install/jackal_elevator/share/jackal_elevator/package.bash'
+[2.812s] INFO:colcon.colcon_core.shell:Creating package script '/home/hm/ros2_ws/install/jackal_elevator/share/jackal_elevator/package.zsh'
+[2.813s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/hm/ros2_ws/install/jackal_elevator/share/colcon-core/packages/jackal_elevator)
+[2.813s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(jackal_elevator)
+[2.813s] Level 1:colcon.colcon_core.environment:checking '/home/hm/ros2_ws/install/jackal_elevator' for CMake module files
+[2.814s] Level 1:colcon.colcon_core.environment:checking '/home/hm/ros2_ws/install/jackal_elevator' for CMake config files
+[2.836s] Level 1:colcon.colcon_core.shell:create_environment_hook('jackal_elevator', 'cmake_prefix_path')
+[2.837s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hm/ros2_ws/install/jackal_elevator/share/jackal_elevator/hook/cmake_prefix_path.ps1'
+[2.838s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hm/ros2_ws/install/jackal_elevator/share/jackal_elevator/hook/cmake_prefix_path.dsv'
+[2.838s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hm/ros2_ws/install/jackal_elevator/share/jackal_elevator/hook/cmake_prefix_path.sh'
+[2.839s] Level 1:colcon.colcon_core.environment:checking '/home/hm/ros2_ws/install/jackal_elevator/lib'
+[2.839s] Level 1:colcon.colcon_core.environment:checking '/home/hm/ros2_ws/install/jackal_elevator/bin'
+[2.839s] Level 1:colcon.colcon_core.environment:checking '/home/hm/ros2_ws/install/jackal_elevator/lib/pkgconfig/jackal_elevator.pc'
+[2.839s] Level 1:colcon.colcon_core.environment:checking '/home/hm/ros2_ws/install/jackal_elevator/lib/python3.12/site-packages'
+[2.840s] Level 1:colcon.colcon_core.environment:checking '/home/hm/ros2_ws/install/jackal_elevator/bin'
+[2.840s] INFO:colcon.colcon_core.shell:Creating package script '/home/hm/ros2_ws/install/jackal_elevator/share/jackal_elevator/package.ps1'
+[2.841s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/hm/ros2_ws/install/jackal_elevator/share/jackal_elevator/package.dsv'
+[2.841s] INFO:colcon.colcon_core.shell:Creating package script '/home/hm/ros2_ws/install/jackal_elevator/share/jackal_elevator/package.sh'
+[2.842s] INFO:colcon.colcon_core.shell:Creating package script '/home/hm/ros2_ws/install/jackal_elevator/share/jackal_elevator/package.bash'
+[2.842s] INFO:colcon.colcon_core.shell:Creating package script '/home/hm/ros2_ws/install/jackal_elevator/share/jackal_elevator/package.zsh'
+[2.843s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/hm/ros2_ws/install/jackal_elevator/share/colcon-core/packages/jackal_elevator)
+[2.843s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[2.843s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[2.844s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[2.844s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[2.861s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[2.861s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[2.861s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[2.905s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[2.905s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/hm/ros2_ws/install/local_setup.ps1'
+[2.908s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/hm/ros2_ws/install/_local_setup_util_ps1.py'
+[2.911s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/hm/ros2_ws/install/setup.ps1'
+[2.913s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/hm/ros2_ws/install/local_setup.sh'
+[2.915s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/hm/ros2_ws/install/_local_setup_util_sh.py'
+[2.917s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/hm/ros2_ws/install/setup.sh'
+[2.919s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/hm/ros2_ws/install/local_setup.bash'
+[2.920s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/hm/ros2_ws/install/setup.bash'
+[2.922s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/hm/ros2_ws/install/local_setup.zsh'
+[2.924s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/hm/ros2_ws/install/setup.zsh'

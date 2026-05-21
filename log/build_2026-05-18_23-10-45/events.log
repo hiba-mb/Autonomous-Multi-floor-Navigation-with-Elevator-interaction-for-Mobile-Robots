@@ -1,0 +1,350 @@
+[0.000000] (-) TimerEvent: {}
+[0.000765] (multi_floor_nav) JobQueued: {'identifier': 'multi_floor_nav', 'dependencies': OrderedDict()}
+[0.001167] (jackal_elevator) JobQueued: {'identifier': 'jackal_elevator', 'dependencies': OrderedDict({'multi_floor_nav': '/home/hm/ros2_ws/install/multi_floor_nav'})}
+[0.001282] (multi_floor_nav) JobStarted: {'identifier': 'multi_floor_nav'}
+[0.016457] (multi_floor_nav) JobProgress: {'identifier': 'multi_floor_nav', 'progress': 'cmake'}
+[0.018113] (multi_floor_nav) JobProgress: {'identifier': 'multi_floor_nav', 'progress': 'build'}
+[0.019231] (multi_floor_nav) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/hm/ros2_ws/build/multi_floor_nav', '--', '-j12', '-l12'], 'cwd': '/home/hm/ros2_ws/build/multi_floor_nav', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/home/hm/ros2_ws/src/jackal_elevator/models:/home/hm/ros2_ws/src/jackal_elevator/worlds/gazebo_models:/home/hm/ros2_ws/install/jackal_elevator/share/jackal_elevator/worlds/gazebo_models:/home/hm/.gazebo/models:/home/hm/.gz/fuel/fuel.gazebosim.org/openrobotics/models:/home/hm/.gz/fuel/fuel.gazebosim.org/openrobotics/models/fire%20hydrant/3:/home/hm/.gz/fuel/fuel.gazebosim.org/openrobotics/models/fire%20hydrant/3/materials/textures', 'USER': 'hm', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'wayland', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LIBGL_ALWAYS_SOFTWARE': '0', 'LD_LIBRARY_PATH': '/home/hm/ros2_ws/install/multi_floor_nav/lib:/opt/ros/jazzy/opt/zenoh_cpp_vendor/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/hm', 'CYCLONEDDS_URI': 'file:///home/hm/.cyclonedds.xml', 'OLDPWD': '/home/hm', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2718', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/hm/ros2_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'hm', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'hm', 'TERM': 'xterm-256color', 'GAZEBO_MODEL_PATH': '/opt/ros/jazzy/share/', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/hm-ub:@/tmp/.ICE-unix/2687,unix/hm-ub:/tmp/.ICE-unix/2687', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/61d43d7d_16aa_474f_9fee_831d7fd71dd1', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'RMW_IMPLEMENTATION': 'rmw_cyclonedds_cpp', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.2FB5O3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.102', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', '__GL_SYNC_TO_VBLANK': '0', 'ROS_DOMAIN_ID': '42', 'AMENT_PREFIX_PATH': '/home/hm/ros2_ws/install/jackal_elevator:/home/hm/ros2_ws/install/multi_floor_nav:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/hm/ros2_ws/build/multi_floor_nav', 'TURTLEBOT3_MODEL': 'waffle', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/home/hm/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/hm/ros2_ws/install/multi_floor_nav/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/hm/ros2_ws/install/jackal_elevator:/home/hm/ros2_ws/install/multi_floor_nav:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.099800] (-) TimerEvent: {}
+[0.138154] (multi_floor_nav) StdoutLine: {'line': b'[  1%] Built target multi_floor_nav__rs\n'}
+[0.142696] (multi_floor_nav) StdoutLine: {'line': b'[  3%] Built target multi_floor_nav__rosidl_generator_type_description\n'}
+[0.163103] (multi_floor_nav) StdoutLine: {'line': b'[  7%] Built target robot_visibility_node\n'}
+[0.168510] (multi_floor_nav) StdoutLine: {'line': b'[  7%] Built target ament_cmake_python_symlink_multi_floor_nav\n'}
+[0.200026] (-) TimerEvent: {}
+[0.209768] (multi_floor_nav) StdoutLine: {'line': b'[  9%] Built target multi_floor_nav__cpp\n'}
+[0.212534] (multi_floor_nav) StdoutLine: {'line': b'[ 24%] Built target multi_floor_nav__rosidl_generator_c\n'}
+[0.300440] (-) TimerEvent: {}
+[0.306658] (multi_floor_nav) StdoutLine: {'line': b'[ 32%] Built target multi_floor_nav__rosidl_typesupport_introspection_c\n'}
+[0.307554] (multi_floor_nav) StdoutLine: {'line': b'[ 39%] Built target multi_floor_nav__rosidl_typesupport_fastrtps_c\n'}
+[0.333027] (multi_floor_nav) StdoutLine: {'line': b'[ 47%] Built target multi_floor_nav__rosidl_typesupport_introspection_cpp\n'}
+[0.336764] (multi_floor_nav) StdoutLine: {'line': b'[ 54%] Built target multi_floor_nav__rosidl_typesupport_cpp\n'}
+[0.341110] (multi_floor_nav) StdoutLine: {'line': b'[ 62%] Built target multi_floor_nav__rosidl_typesupport_c\n'}
+[0.342697] (multi_floor_nav) StdoutLine: {'line': b'[ 69%] Built target multi_floor_nav__rosidl_typesupport_fastrtps_cpp\n'}
+[0.401449] (-) TimerEvent: {}
+[0.429955] (multi_floor_nav) StdoutLine: {'line': b'[ 73%] Built target multi_floor_navigation_node\n'}
+[0.435843] (multi_floor_nav) StdoutLine: {'line': b'[ 77%] Built target change_map_node\n'}
+[0.446774] (multi_floor_nav) StdoutLine: {'line': b'[ 79%] \x1b[32mBuilding CXX object CMakeFiles/elevator_bt_executor.dir/src/elevator_bt_executor.cpp.o\x1b[0m\n'}
+[0.485540] (multi_floor_nav) StdoutLine: {'line': b'[ 79%] Built target multi_floor_nav\n'}
+[0.501604] (-) TimerEvent: {}
+[0.545421] (multi_floor_nav) StdoutLine: {'line': b'[ 81%] Built target multi_floor_nav__py\n'}
+[0.601765] (-) TimerEvent: {}
+[0.609351] (multi_floor_nav) StdoutLine: {'line': b'[ 86%] Built target multi_floor_nav__rosidl_generator_py\n'}
+[0.669829] (multi_floor_nav) StdoutLine: {'line': b'[ 90%] Built target multi_floor_nav_s__rosidl_typesupport_fastrtps_c\n'}
+[0.675728] (multi_floor_nav) StdoutLine: {'line': b'[ 94%] Built target multi_floor_nav_s__rosidl_typesupport_introspection_c\n'}
+[0.678416] (multi_floor_nav) StdoutLine: {'line': b'[ 98%] Built target multi_floor_nav_s__rosidl_typesupport_c\n'}
+[0.701931] (-) TimerEvent: {}
+[0.802560] (-) TimerEvent: {}
+[0.860063] (multi_floor_nav) StdoutLine: {'line': b'running egg_info\n'}
+[0.901750] (multi_floor_nav) StdoutLine: {'line': b'writing multi_floor_nav.egg-info/PKG-INFO\n'}
+[0.902449] (multi_floor_nav) StdoutLine: {'line': b'writing dependency_links to multi_floor_nav.egg-info/dependency_links.txt\n'}
+[0.902754] (-) TimerEvent: {}
+[0.903249] (multi_floor_nav) StdoutLine: {'line': b'writing top-level names to multi_floor_nav.egg-info/top_level.txt\n'}
+[1.003006] (-) TimerEvent: {}
+[1.046677] (multi_floor_nav) StdoutLine: {'line': b"reading manifest file 'multi_floor_nav.egg-info/SOURCES.txt'\n"}
+[1.048852] (multi_floor_nav) StdoutLine: {'line': b"writing manifest file 'multi_floor_nav.egg-info/SOURCES.txt'\n"}
+[1.103243] (-) TimerEvent: {}
+[1.135361] (multi_floor_nav) StdoutLine: {'line': b'[ 98%] Built target ament_cmake_python_build_multi_floor_nav_egg\n'}
+[1.203354] (-) TimerEvent: {}
+[1.303783] (-) TimerEvent: {}
+[1.404210] (-) TimerEvent: {}
+[1.504767] (-) TimerEvent: {}
+[1.605317] (-) TimerEvent: {}
+[1.705743] (-) TimerEvent: {}
+[1.806217] (-) TimerEvent: {}
+[1.906630] (-) TimerEvent: {}
+[2.007056] (-) TimerEvent: {}
+[2.107651] (-) TimerEvent: {}
+[2.208112] (-) TimerEvent: {}
+[2.308492] (-) TimerEvent: {}
+[2.408832] (-) TimerEvent: {}
+[2.509196] (-) TimerEvent: {}
+[2.609659] (-) TimerEvent: {}
+[2.710053] (-) TimerEvent: {}
+[2.810545] (-) TimerEvent: {}
+[2.910948] (-) TimerEvent: {}
+[3.011548] (-) TimerEvent: {}
+[3.112048] (-) TimerEvent: {}
+[3.212541] (-) TimerEvent: {}
+[3.312945] (-) TimerEvent: {}
+[3.413327] (-) TimerEvent: {}
+[3.513876] (-) TimerEvent: {}
+[3.614470] (-) TimerEvent: {}
+[3.715163] (-) TimerEvent: {}
+[3.815813] (-) TimerEvent: {}
+[3.916553] (-) TimerEvent: {}
+[4.017203] (-) TimerEvent: {}
+[4.117914] (-) TimerEvent: {}
+[4.218551] (-) TimerEvent: {}
+[4.319158] (-) TimerEvent: {}
+[4.419956] (-) TimerEvent: {}
+[4.520500] (-) TimerEvent: {}
+[4.621107] (-) TimerEvent: {}
+[4.721681] (-) TimerEvent: {}
+[4.822146] (-) TimerEvent: {}
+[4.922591] (-) TimerEvent: {}
+[5.023044] (-) TimerEvent: {}
+[5.123484] (-) TimerEvent: {}
+[5.223916] (-) TimerEvent: {}
+[5.324457] (-) TimerEvent: {}
+[5.424837] (-) TimerEvent: {}
+[5.525293] (-) TimerEvent: {}
+[5.625801] (-) TimerEvent: {}
+[5.726231] (-) TimerEvent: {}
+[5.826679] (-) TimerEvent: {}
+[5.927100] (-) TimerEvent: {}
+[6.027689] (-) TimerEvent: {}
+[6.128133] (-) TimerEvent: {}
+[6.228543] (-) TimerEvent: {}
+[6.329096] (-) TimerEvent: {}
+[6.429600] (-) TimerEvent: {}
+[6.530085] (-) TimerEvent: {}
+[6.630623] (-) TimerEvent: {}
+[6.731198] (-) TimerEvent: {}
+[6.831931] (-) TimerEvent: {}
+[6.932552] (-) TimerEvent: {}
+[7.033033] (-) TimerEvent: {}
+[7.133878] (-) TimerEvent: {}
+[7.234557] (-) TimerEvent: {}
+[7.335079] (-) TimerEvent: {}
+[7.435789] (-) TimerEvent: {}
+[7.536233] (-) TimerEvent: {}
+[7.636841] (-) TimerEvent: {}
+[7.737407] (-) TimerEvent: {}
+[7.837956] (-) TimerEvent: {}
+[7.938505] (-) TimerEvent: {}
+[8.039188] (-) TimerEvent: {}
+[8.139992] (-) TimerEvent: {}
+[8.240434] (-) TimerEvent: {}
+[8.341139] (-) TimerEvent: {}
+[8.441788] (-) TimerEvent: {}
+[8.460238] (multi_floor_nav) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/hm/ros2_ws/src/robot-multi-floor-navigation/multi_floor_nav/src/elevator_bt_executor.cpp:22\x1b[m\x1b[K:\n'}
+[8.460590] (multi_floor_nav) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hm/ros2_ws/src/robot-multi-floor-navigation/multi_floor_nav/include/multi_floor_nav/bt_nodes/elevator_mqtt_nodes.hpp:\x1b[m\x1b[K In static member function \xe2\x80\x98\x1b[01m\x1b[Kstatic BT::PortsList WaitElevatorGrant::\x1b[01;32m\x1b[KprovidedPorts\x1b[m\x1b[K()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[8.460705] (multi_floor_nav) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hm/ros2_ws/src/robot-multi-floor-navigation/multi_floor_nav/include/multi_floor_nav/bt_nodes/elevator_mqtt_nodes.hpp:86:7:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K}\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[KBT\x1b[m\x1b[K\xe2\x80\x99\n'}
+[8.460802] (multi_floor_nav) StderrLine: {'line': b'   86 |       \x1b[01;31m\x1b[KBT\x1b[m\x1b[K::InputPort<std::string>("topic", "", "Topic grant (optionnel)"),\n'}
+[8.460885] (multi_floor_nav) StderrLine: {'line': b'      |       \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[8.460967] (multi_floor_nav) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hm/ros2_ws/src/robot-multi-floor-navigation/multi_floor_nav/include/multi_floor_nav/bt_nodes/elevator_mqtt_nodes.hpp:83:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kto match this \xe2\x80\x98\x1b[01m\x1b[K{\x1b[m\x1b[K\xe2\x80\x99\n'}
+[8.461057] (multi_floor_nav) StderrLine: {'line': b'   83 |     return \x1b[01;36m\x1b[K{\x1b[m\x1b[K\n'}
+[8.461436] (multi_floor_nav) StderrLine: {'line': b'      |            \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[8.461537] (multi_floor_nav) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hm/ros2_ws/src/robot-multi-floor-navigation/multi_floor_nav/include/multi_floor_nav/bt_nodes/elevator_mqtt_nodes.hpp:86:7:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[KBT\x1b[m\x1b[K\xe2\x80\x99\n'}
+[8.461629] (multi_floor_nav) StderrLine: {'line': b'   86 |       \x1b[01;31m\x1b[KBT\x1b[m\x1b[K::InputPort<std::string>("topic", "", "Topic grant (optionnel)"),\n'}
+[8.461719] (multi_floor_nav) StderrLine: {'line': b'      |       \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[8.461806] (multi_floor_nav) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hm/ros2_ws/src/robot-multi-floor-navigation/multi_floor_nav/include/multi_floor_nav/bt_nodes/elevator_mqtt_nodes.hpp:87:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected primary-expression before \xe2\x80\x98\x1b[01m\x1b[K}\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[8.461901] (multi_floor_nav) StderrLine: {'line': b'   87 |     \x1b[01;31m\x1b[K}\x1b[m\x1b[K;\n'}
+[8.461978] (multi_floor_nav) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[8.462802] (multi_floor_nav) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hm/ros2_ws/src/robot-multi-floor-navigation/multi_floor_nav/include/multi_floor_nav/bt_nodes/elevator_mqtt_nodes.hpp:\x1b[m\x1b[K In lambda function:\n'}
+[8.463030] (multi_floor_nav) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hm/ros2_ws/src/robot-multi-floor-navigation/multi_floor_nav/include/multi_floor_nav/bt_nodes/elevator_mqtt_nodes.hpp:105:68:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kmsg\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[8.463137] (multi_floor_nav) StderrLine: {'line': b'  105 |       client_->set_message_callback([this](\x1b[01;35m\x1b[Kmqtt::const_message_ptr msg\x1b[m\x1b[K) {\n'}
+[8.463227] (multi_floor_nav) StderrLine: {'line': b'      |                                            \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[8.541957] (-) TimerEvent: {}
+[8.642547] (-) TimerEvent: {}
+[8.743199] (-) TimerEvent: {}
+[8.843828] (-) TimerEvent: {}
+[8.920589] (multi_floor_nav) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hm/ros2_ws/src/robot-multi-floor-navigation/multi_floor_nav/src/elevator_bt_executor.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kdouble NavigateToElevatorEntry::\x1b[01;32m\x1b[KgetCurrentYaw\x1b[m\x1b[K()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[8.921350] (multi_floor_nav) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hm/ros2_ws/src/robot-multi-floor-navigation/multi_floor_nav/src/elevator_bt_executor.cpp:311:29:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kignoring return value of \xe2\x80\x98\x1b[01m\x1b[Kbool BT::Blackboard::\x1b[01;32m\x1b[Kget\x1b[m\x1b[K(const std::string&, T&) const \x1b[35m\x1b[K[with T = std::__cxx11::basic_string<char>; std::string = std::__cxx11::basic_string<char>]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99, declared with attribute \xe2\x80\x98\x1b[01m\x1b[Knodiscard\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-result\x07-Wunused-result\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[8.921835] (multi_floor_nav) StderrLine: {'line': b'  311 |     \x1b[01;35m\x1b[Kconfig().blackboard->get("robot_namespace", robot_ns)\x1b[m\x1b[K;\n'}
+[8.922187] (multi_floor_nav) StderrLine: {'line': b'      |     \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.922596] (multi_floor_nav) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/jazzy/include/behaviortree_cpp/tree_node.h:17\x1b[m\x1b[K,\n'}
+[8.922930] (multi_floor_nav) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/behaviortree_cpp/leaf_node.h:17\x1b[m\x1b[K,\n'}
+[8.923258] (multi_floor_nav) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/behaviortree_cpp/action_node.h:17\x1b[m\x1b[K,\n'}
+[8.923621] (multi_floor_nav) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/behaviortree_cpp/behavior_tree.h:16\x1b[m\x1b[K,\n'}
+[8.923944] (multi_floor_nav) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/behaviortree_cpp/bt_factory.h:17\x1b[m\x1b[K,\n'}
+[8.924301] (multi_floor_nav) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hm/ros2_ws/src/robot-multi-floor-navigation/multi_floor_nav/src/elevator_bt_executor.cpp:10\x1b[m\x1b[K:\n'}
+[8.924638] (multi_floor_nav) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/behaviortree_cpp/blackboard.h:389:13:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[8.925002] (multi_floor_nav) StderrLine: {'line': b'  389 | inline bool \x1b[01;36m\x1b[KBlackboard\x1b[m\x1b[K::get(const std::string& key, T& value) const\n'}
+[8.925416] (multi_floor_nav) StderrLine: {'line': b'      |             \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.944041] (-) TimerEvent: {}
+[9.044830] (-) TimerEvent: {}
+[9.145505] (-) TimerEvent: {}
+[9.152207] (multi_floor_nav) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hm/ros2_ws/src/robot-multi-floor-navigation/multi_floor_nav/src/elevator_bt_executor.cpp:\x1b[m\x1b[K In lambda function:\n'}
+[9.152695] (multi_floor_nav) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hm/ros2_ws/src/robot-multi-floor-navigation/multi_floor_nav/src/elevator_bt_executor.cpp:638:16:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kelapsed\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[9.152925] (multi_floor_nav) StderrLine: {'line': b'  638 |           auto \x1b[01;35m\x1b[Kelapsed\x1b[m\x1b[K = std::chrono::duration<double>(\n'}
+[9.153190] (multi_floor_nav) StderrLine: {'line': b'      |                \x1b[01;35m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[9.245663] (-) TimerEvent: {}
+[9.314846] (multi_floor_nav) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hm/ros2_ws/src/robot-multi-floor-navigation/multi_floor_nav/src/elevator_bt_executor.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual BT::NodeStatus ElevatorBTExecutor::IsRobot::\x1b[01;32m\x1b[Ktick\x1b[m\x1b[K()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[9.315201] (multi_floor_nav) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hm/ros2_ws/src/robot-multi-floor-navigation/multi_floor_nav/src/elevator_bt_executor.cpp:816:27:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kignoring return value of \xe2\x80\x98\x1b[01m\x1b[Kbool BT::Blackboard::\x1b[01;32m\x1b[Kget\x1b[m\x1b[K(const std::string&, T&) const \x1b[35m\x1b[K[with T = std::__cxx11::basic_string<char>; std::string = std::__cxx11::basic_string<char>]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99, declared with attribute \xe2\x80\x98\x1b[01m\x1b[Knodiscard\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-result\x07-Wunused-result\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[9.315346] (multi_floor_nav) StderrLine: {'line': b'  816 |   \x1b[01;35m\x1b[Kconfig().blackboard->get("robot_namespace", actual)\x1b[m\x1b[K;\n'}
+[9.315436] (multi_floor_nav) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.315504] (multi_floor_nav) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/behaviortree_cpp/blackboard.h:389:13:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[9.315587] (multi_floor_nav) StderrLine: {'line': b'  389 | inline bool \x1b[01;36m\x1b[KBlackboard\x1b[m\x1b[K::get(const std::string& key, T& value) const\n'}
+[9.315658] (multi_floor_nav) StderrLine: {'line': b'      |             \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.345867] (-) TimerEvent: {}
+[9.446201] (-) TimerEvent: {}
+[9.546582] (-) TimerEvent: {}
+[9.647111] (-) TimerEvent: {}
+[9.747811] (-) TimerEvent: {}
+[9.848491] (-) TimerEvent: {}
+[9.948950] (-) TimerEvent: {}
+[10.049597] (-) TimerEvent: {}
+[10.150205] (-) TimerEvent: {}
+[10.250713] (-) TimerEvent: {}
+[10.351412] (-) TimerEvent: {}
+[10.451889] (-) TimerEvent: {}
+[10.552332] (-) TimerEvent: {}
+[10.652750] (-) TimerEvent: {}
+[10.753283] (-) TimerEvent: {}
+[10.853809] (-) TimerEvent: {}
+[10.954340] (-) TimerEvent: {}
+[11.054789] (-) TimerEvent: {}
+[11.155218] (-) TimerEvent: {}
+[11.255810] (-) TimerEvent: {}
+[11.356459] (-) TimerEvent: {}
+[11.456927] (-) TimerEvent: {}
+[11.557339] (-) TimerEvent: {}
+[11.657821] (-) TimerEvent: {}
+[11.758306] (-) TimerEvent: {}
+[11.858814] (-) TimerEvent: {}
+[11.959365] (-) TimerEvent: {}
+[12.059858] (-) TimerEvent: {}
+[12.160392] (-) TimerEvent: {}
+[12.260948] (-) TimerEvent: {}
+[12.361503] (-) TimerEvent: {}
+[12.461978] (-) TimerEvent: {}
+[12.562430] (-) TimerEvent: {}
+[12.663021] (-) TimerEvent: {}
+[12.763801] (-) TimerEvent: {}
+[12.864399] (-) TimerEvent: {}
+[12.964954] (-) TimerEvent: {}
+[13.065835] (-) TimerEvent: {}
+[13.166521] (-) TimerEvent: {}
+[13.267076] (-) TimerEvent: {}
+[13.367579] (-) TimerEvent: {}
+[13.468143] (-) TimerEvent: {}
+[13.568752] (-) TimerEvent: {}
+[13.669395] (-) TimerEvent: {}
+[13.770039] (-) TimerEvent: {}
+[13.870688] (-) TimerEvent: {}
+[13.971253] (-) TimerEvent: {}
+[14.071797] (-) TimerEvent: {}
+[14.172338] (-) TimerEvent: {}
+[14.272975] (-) TimerEvent: {}
+[14.373578] (-) TimerEvent: {}
+[14.474031] (-) TimerEvent: {}
+[14.574590] (-) TimerEvent: {}
+[14.675164] (-) TimerEvent: {}
+[14.775691] (-) TimerEvent: {}
+[14.876216] (-) TimerEvent: {}
+[14.976662] (-) TimerEvent: {}
+[15.077103] (-) TimerEvent: {}
+[15.177563] (-) TimerEvent: {}
+[15.278084] (-) TimerEvent: {}
+[15.378580] (-) TimerEvent: {}
+[15.479064] (-) TimerEvent: {}
+[15.579511] (-) TimerEvent: {}
+[15.680068] (-) TimerEvent: {}
+[15.780820] (-) TimerEvent: {}
+[15.881371] (-) TimerEvent: {}
+[15.981852] (-) TimerEvent: {}
+[16.082513] (-) TimerEvent: {}
+[16.183112] (-) TimerEvent: {}
+[16.283670] (-) TimerEvent: {}
+[16.384158] (-) TimerEvent: {}
+[16.484552] (-) TimerEvent: {}
+[16.585053] (-) TimerEvent: {}
+[16.685615] (-) TimerEvent: {}
+[16.786169] (-) TimerEvent: {}
+[16.886615] (-) TimerEvent: {}
+[16.987072] (-) TimerEvent: {}
+[17.087556] (-) TimerEvent: {}
+[17.188038] (-) TimerEvent: {}
+[17.288589] (-) TimerEvent: {}
+[17.389152] (-) TimerEvent: {}
+[17.489700] (-) TimerEvent: {}
+[17.590085] (-) TimerEvent: {}
+[17.690540] (-) TimerEvent: {}
+[17.790982] (-) TimerEvent: {}
+[17.891508] (-) TimerEvent: {}
+[17.992044] (-) TimerEvent: {}
+[18.092559] (-) TimerEvent: {}
+[18.193004] (-) TimerEvent: {}
+[18.293469] (-) TimerEvent: {}
+[18.393901] (-) TimerEvent: {}
+[18.494346] (-) TimerEvent: {}
+[18.594696] (-) TimerEvent: {}
+[18.695176] (-) TimerEvent: {}
+[18.795888] (-) TimerEvent: {}
+[18.896707] (-) TimerEvent: {}
+[18.997321] (-) TimerEvent: {}
+[19.097961] (-) TimerEvent: {}
+[19.198676] (-) TimerEvent: {}
+[19.299217] (-) TimerEvent: {}
+[19.399823] (-) TimerEvent: {}
+[19.500201] (-) TimerEvent: {}
+[19.600659] (-) TimerEvent: {}
+[19.701192] (-) TimerEvent: {}
+[19.801874] (-) TimerEvent: {}
+[19.902543] (-) TimerEvent: {}
+[20.002988] (-) TimerEvent: {}
+[20.103399] (-) TimerEvent: {}
+[20.203935] (-) TimerEvent: {}
+[20.304453] (-) TimerEvent: {}
+[20.404931] (-) TimerEvent: {}
+[20.505442] (-) TimerEvent: {}
+[20.606036] (-) TimerEvent: {}
+[20.706467] (-) TimerEvent: {}
+[20.806959] (-) TimerEvent: {}
+[20.907459] (-) TimerEvent: {}
+[21.008073] (-) TimerEvent: {}
+[21.108612] (-) TimerEvent: {}
+[21.209242] (-) TimerEvent: {}
+[21.309665] (-) TimerEvent: {}
+[21.410036] (-) TimerEvent: {}
+[21.510492] (-) TimerEvent: {}
+[21.610993] (-) TimerEvent: {}
+[21.711494] (-) TimerEvent: {}
+[21.812127] (-) TimerEvent: {}
+[21.912769] (-) TimerEvent: {}
+[22.013309] (-) TimerEvent: {}
+[22.114066] (-) TimerEvent: {}
+[22.214814] (-) TimerEvent: {}
+[22.315380] (-) TimerEvent: {}
+[22.415856] (-) TimerEvent: {}
+[22.516288] (-) TimerEvent: {}
+[22.616794] (-) TimerEvent: {}
+[22.717236] (-) TimerEvent: {}
+[22.817676] (-) TimerEvent: {}
+[22.918101] (-) TimerEvent: {}
+[23.018537] (-) TimerEvent: {}
+[23.118946] (-) TimerEvent: {}
+[23.219420] (-) TimerEvent: {}
+[23.320006] (-) TimerEvent: {}
+[23.420521] (-) TimerEvent: {}
+[23.521073] (-) TimerEvent: {}
+[23.621649] (-) TimerEvent: {}
+[23.722156] (-) TimerEvent: {}
+[23.822637] (-) TimerEvent: {}
+[23.923115] (-) TimerEvent: {}
+[24.023605] (-) TimerEvent: {}
+[24.124079] (-) TimerEvent: {}
+[24.224589] (-) TimerEvent: {}
+[24.325110] (-) TimerEvent: {}
+[24.425670] (-) TimerEvent: {}
+[24.526144] (-) TimerEvent: {}
+[24.626833] (-) TimerEvent: {}
+[24.727550] (-) TimerEvent: {}
+[24.828239] (-) TimerEvent: {}
+[24.928909] (-) TimerEvent: {}
+[25.029773] (-) TimerEvent: {}
+[25.130655] (-) TimerEvent: {}
+[25.231245] (-) TimerEvent: {}
+[25.332113] (-) TimerEvent: {}
+[25.432695] (-) TimerEvent: {}
+[25.533073] (-) TimerEvent: {}
+[25.633587] (-) TimerEvent: {}
+[25.734038] (-) TimerEvent: {}
+[25.834495] (-) TimerEvent: {}
+[25.934986] (-) TimerEvent: {}
+[26.035687] (-) TimerEvent: {}
+[26.136328] (-) TimerEvent: {}
+[26.237117] (-) TimerEvent: {}
+[26.338102] (-) TimerEvent: {}
+[26.438855] (-) TimerEvent: {}
+[26.539473] (-) TimerEvent: {}
+[26.640107] (-) TimerEvent: {}
+[26.740836] (-) TimerEvent: {}
+[26.754909] (multi_floor_nav) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/elevator_bt_executor.dir/build.make:76: CMakeFiles/elevator_bt_executor.dir/src/elevator_bt_executor.cpp.o] Error 1\n'}
+[26.755887] (multi_floor_nav) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:706: CMakeFiles/elevator_bt_executor.dir/all] Error 2\n'}
+[26.756718] (multi_floor_nav) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[26.763709] (multi_floor_nav) CommandEnded: {'returncode': 2}
+[26.818033] (multi_floor_nav) JobEnded: {'identifier': 'multi_floor_nav', 'rc': 2}
+[26.829524] (jackal_elevator) JobSkipped: {'identifier': 'jackal_elevator'}
+[26.829688] (-) EventReactorShutdown: {}

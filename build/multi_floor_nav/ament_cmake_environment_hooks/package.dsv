@@ -1,0 +1,4 @@
+source;share/multi_floor_nav/local_setup.bash
+source;share/multi_floor_nav/local_setup.dsv
+source;share/multi_floor_nav/local_setup.sh
+source;share/multi_floor_nav/local_setup.zsh

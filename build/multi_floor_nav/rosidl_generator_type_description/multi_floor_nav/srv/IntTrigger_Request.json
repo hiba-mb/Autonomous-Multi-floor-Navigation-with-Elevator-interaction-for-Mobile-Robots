@@ -1,0 +1,26 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "multi_floor_nav/srv/IntTrigger_Request",
+      "fields": [
+        {
+          "name": "req_int",
+          "type": {
+            "type_id": 6,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "multi_floor_nav/srv/IntTrigger_Request",
+      "hash_string": "RIHS01_0cf09f787a075ee6a0f8445ce74dbd77f1a7343341d729eedb5c6b7b72df95b4"
+    }
+  ]
+}

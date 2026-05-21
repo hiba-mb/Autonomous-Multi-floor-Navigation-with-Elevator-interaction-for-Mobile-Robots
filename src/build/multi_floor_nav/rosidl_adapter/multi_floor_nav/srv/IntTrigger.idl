@@ -1,0 +1,17 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from multi_floor_nav/srv/IntTrigger.srv
+// generated code does not contain a copyright notice
+
+
+module multi_floor_nav {
+  module srv {
+    struct IntTrigger_Request {
+      int32 req_int;
+    };
+    struct IntTrigger_Response {
+      boolean success;
+
+      string message;
+    };
+  };
+};

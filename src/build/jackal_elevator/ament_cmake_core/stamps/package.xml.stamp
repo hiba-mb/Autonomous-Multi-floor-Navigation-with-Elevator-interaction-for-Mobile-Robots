@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>jackal_elevator</name>
+  <version>0.0.2</version>
+  <description>
+    Launch files, maps et world pour la navigation autonome multi-étages
+    du Jackal UGV avec ascenseur. Porté de ROS1 (Noetic) vers ROS2 (Jazzy).
+  </description>
+  <author email="swarooph@kabam.ai">Swarooph Seshadri</author>
+  <maintainer email="swarooph@kabam.ai">Swarooph Seshadri</maintainer>
+  <license>BSD</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <!-- Equivalent de gazebo_ros (ROS1) -->
+  <exec_depend>ros_gz_sim</exec_depend>
+  <exec_depend>ros_gz_bridge</exec_depend>
+
+  <!-- Equivalent de amcl (ROS1) -->
+  <exec_depend>nav2_amcl</exec_depend>
+
+  <!-- Equivalent de map_server (ROS1) -->
+  <exec_depend>nav2_map_server</exec_depend>
+
+  <!-- Equivalent de move_base (ROS1) -->
+  <exec_depend>nav2_bringup</exec_depend>
+  <exec_depend>nav2_lifecycle_manager</exec_depend>
+
+  <!-- Equivalent de urdf + xacro (ROS1) -->
+  <exec_depend>urdf</exec_depend>
+  <exec_depend>xacro</exec_depend>
+  <exec_depend>robot_state_publisher</exec_depend>
+
+  <!-- Equivalent de jackal_description/jackal_gazebo (ROS1) -->
+  <exec_depend>clearpath_platform_description</exec_depend>
+
+  <!-- Equivalent de jackal_viz (ROS1) -->
+  <exec_depend>rviz2</exec_depend>
+
+  <!-- Noeuds custom de navigation multi-étages -->
+  <exec_depend>multi_floor_nav</exec_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

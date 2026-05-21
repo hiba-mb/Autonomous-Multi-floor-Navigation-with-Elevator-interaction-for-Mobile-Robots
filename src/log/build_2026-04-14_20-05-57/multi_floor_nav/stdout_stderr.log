@@ -1,0 +1,68 @@
+[  2%] [34m[1mGenerating type hashes for ROS interfaces[0m
+[  2%] Built target ament_cmake_python_copy_multi_floor_nav
+[  2%] Built target multi_floor_nav__rosidl_generator_type_description
+running egg_info
+creating multi_floor_nav.egg-info
+[  5%] [34m[1mGenerating C code for ROS interfaces[0m
+writing multi_floor_nav.egg-info/PKG-INFO
+writing dependency_links to multi_floor_nav.egg-info/dependency_links.txt
+writing top-level names to multi_floor_nav.egg-info/top_level.txt
+writing manifest file 'multi_floor_nav.egg-info/SOURCES.txt'
+[  7%] [34m[1mGenerating C++ code for ROS interfaces[0m
+reading manifest file 'multi_floor_nav.egg-info/SOURCES.txt'
+writing manifest file 'multi_floor_nav.egg-info/SOURCES.txt'
+[  7%] Built target ament_cmake_python_build_multi_floor_nav_egg
+[ 10%] [32mBuilding C object CMakeFiles/multi_floor_nav__rosidl_generator_c.dir/rosidl_generator_c/multi_floor_nav/srv/detail/int_trigger__functions.c.o[0m
+[ 15%] [32mBuilding C object CMakeFiles/multi_floor_nav__rosidl_generator_c.dir/rosidl_generator_c/multi_floor_nav/srv/detail/int_trigger__type_support.c.o[0m
+[ 15%] [32mBuilding C object CMakeFiles/multi_floor_nav__rosidl_generator_c.dir/rosidl_generator_c/multi_floor_nav/srv/detail/int_trigger__description.c.o[0m
+[ 15%] Built target multi_floor_nav__cpp
+[ 17%] [32m[1mLinking C shared library libmulti_floor_nav__rosidl_generator_c.so[0m
+[ 17%] Built target multi_floor_nav__rosidl_generator_c
+[ 20%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[ 22%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[ 25%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[ 27%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[ 30%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[ 32%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[ 35%] [32mBuilding CXX object CMakeFiles/multi_floor_nav__rosidl_typesupport_c.dir/rosidl_typesupport_c/multi_floor_nav/srv/int_trigger__type_support.cpp.o[0m
+[ 37%] [32mBuilding CXX object CMakeFiles/multi_floor_nav__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/multi_floor_nav/srv/int_trigger__type_support.cpp.o[0m
+[ 40%] [32mBuilding C object CMakeFiles/multi_floor_nav__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/multi_floor_nav/srv/detail/int_trigger__type_support.c.o[0m
+[ 42%] [32mBuilding CXX object CMakeFiles/multi_floor_nav__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/multi_floor_nav/srv/detail/int_trigger__type_support.cpp.o[0m
+[ 45%] [32m[1mLinking CXX shared library libmulti_floor_nav__rosidl_typesupport_c.so[0m
+[ 47%] [32mBuilding CXX object CMakeFiles/multi_floor_nav__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/multi_floor_nav/srv/detail/int_trigger__type_support_c.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/multi_floor_nav__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/multi_floor_nav/srv/detail/dds_fastrtps/int_trigger__type_support.cpp.o[0m
+[ 52%] [32m[1mLinking C shared library libmulti_floor_nav__rosidl_typesupport_introspection_c.so[0m
+[ 52%] Built target multi_floor_nav__rosidl_typesupport_c
+[ 52%] Built target multi_floor_nav__rosidl_typesupport_introspection_c
+[ 55%] [32m[1mLinking CXX shared library libmulti_floor_nav__rosidl_typesupport_cpp.so[0m
+[ 57%] [32m[1mLinking CXX shared library libmulti_floor_nav__rosidl_typesupport_fastrtps_c.so[0m
+[ 60%] [32m[1mLinking CXX shared library libmulti_floor_nav__rosidl_typesupport_introspection_cpp.so[0m
+[ 60%] Built target multi_floor_nav__rosidl_typesupport_cpp
+[ 65%] [32mBuilding CXX object CMakeFiles/multi_floor_navigation_node.dir/src/multi_floor_navigation.cpp.o[0m
+[ 65%] [32mBuilding CXX object CMakeFiles/change_map_node.dir/src/change_map.cpp.o[0m
+[ 67%] [32mBuilding CXX object CMakeFiles/elevator_bt_executor.dir/src/elevator_bt_executor.cpp.o[0m
+[ 67%] Built target multi_floor_nav__rosidl_typesupport_fastrtps_c
+[ 67%] Built target multi_floor_nav__rosidl_typesupport_introspection_cpp
+[ 70%] [32m[1mLinking CXX shared library libmulti_floor_nav__rosidl_typesupport_fastrtps_cpp.so[0m
+[ 70%] Built target multi_floor_nav__rosidl_typesupport_fastrtps_cpp
+[ 70%] Built target multi_floor_nav
+[ 72%] [34m[1mGenerating Python code for ROS interfaces[0m
+[ 72%] Built target multi_floor_nav__py
+[ 75%] [32mBuilding C object CMakeFiles/multi_floor_nav__rosidl_generator_py.dir/rosidl_generator_py/multi_floor_nav/srv/_int_trigger_s.c.o[0m
+[ 77%] [32m[1mLinking C shared library libmulti_floor_nav__rosidl_generator_py.so[0m
+[ 77%] Built target multi_floor_nav__rosidl_generator_py
+[ 82%] [32mBuilding C object CMakeFiles/multi_floor_nav_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/multi_floor_nav/_multi_floor_nav_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[ 82%] [32mBuilding C object CMakeFiles/multi_floor_nav_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/multi_floor_nav/_multi_floor_nav_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[ 85%] [32mBuilding C object CMakeFiles/multi_floor_nav_s__rosidl_typesupport_c.dir/rosidl_generator_py/multi_floor_nav/_multi_floor_nav_s.ep.rosidl_typesupport_c.c.o[0m
+[ 87%] [32m[1mLinking C shared module rosidl_generator_py/multi_floor_nav/multi_floor_nav_s__rosidl_typesupport_fastrtps_c.so[0m
+[ 90%] [32m[1mLinking C shared module rosidl_generator_py/multi_floor_nav/multi_floor_nav_s__rosidl_typesupport_c.so[0m
+[ 92%] [32m[1mLinking C shared module rosidl_generator_py/multi_floor_nav/multi_floor_nav_s__rosidl_typesupport_introspection_c.so[0m
+[ 92%] Built target multi_floor_nav_s__rosidl_typesupport_fastrtps_c
+[ 92%] Built target multi_floor_nav_s__rosidl_typesupport_c
+[ 92%] Built target multi_floor_nav_s__rosidl_typesupport_introspection_c
+[ 95%] [32m[1mLinking CXX executable multi_floor_navigation_node[0m
+[ 97%] [32m[1mLinking CXX executable change_map_node[0m
+[ 97%] Built target multi_floor_navigation_node
+[ 97%] Built target change_map_node
+[100%] [32m[1mLinking CXX executable elevator_bt_executor[0m
+[100%] Built target elevator_bt_executor

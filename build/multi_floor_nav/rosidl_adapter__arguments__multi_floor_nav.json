@@ -1,0 +1,7 @@
+{
+  "package_name": "multi_floor_nav",
+  "non_idl_tuples": [
+    "/home/hm/ros2_ws/src/robot-multi-floor-navigation/multi_floor_nav:srv/IntTrigger.srv",
+    "/home/hm/ros2_ws/src/robot-multi-floor-navigation/multi_floor_nav:msg/MissionRequest.msg"
+  ]
+}

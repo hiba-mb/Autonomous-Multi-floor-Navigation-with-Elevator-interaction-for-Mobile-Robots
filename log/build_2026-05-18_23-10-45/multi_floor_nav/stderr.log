@@ -1,0 +1,45 @@
+In file included from [01m[K/home/hm/ros2_ws/src/robot-multi-floor-navigation/multi_floor_nav/src/elevator_bt_executor.cpp:22[m[K:
+[01m[K/home/hm/ros2_ws/src/robot-multi-floor-navigation/multi_floor_nav/include/multi_floor_nav/bt_nodes/elevator_mqtt_nodes.hpp:[m[K In static member function ‘[01m[Kstatic BT::PortsList WaitElevatorGrant::[01;32m[KprovidedPorts[m[K()[m[K’:
+[01m[K/home/hm/ros2_ws/src/robot-multi-floor-navigation/multi_floor_nav/include/multi_floor_nav/bt_nodes/elevator_mqtt_nodes.hpp:86:7:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ before ‘[01m[KBT[m[K’
+   86 |       [01;31m[KBT[m[K::InputPort<std::string>("topic", "", "Topic grant (optionnel)"),
+      |       [01;31m[K^~[m[K
+[01m[K/home/hm/ros2_ws/src/robot-multi-floor-navigation/multi_floor_nav/include/multi_floor_nav/bt_nodes/elevator_mqtt_nodes.hpp:83:12:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+   83 |     return [01;36m[K{[m[K
+      |            [01;36m[K^[m[K
+[01m[K/home/hm/ros2_ws/src/robot-multi-floor-navigation/multi_floor_nav/include/multi_floor_nav/bt_nodes/elevator_mqtt_nodes.hpp:86:7:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[KBT[m[K’
+   86 |       [01;31m[KBT[m[K::InputPort<std::string>("topic", "", "Topic grant (optionnel)"),
+      |       [01;31m[K^~[m[K
+[01m[K/home/hm/ros2_ws/src/robot-multi-floor-navigation/multi_floor_nav/include/multi_floor_nav/bt_nodes/elevator_mqtt_nodes.hpp:87:5:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K}[m[K’ token
+   87 |     [01;31m[K}[m[K;
+      |     [01;31m[K^[m[K
+[01m[K/home/hm/ros2_ws/src/robot-multi-floor-navigation/multi_floor_nav/include/multi_floor_nav/bt_nodes/elevator_mqtt_nodes.hpp:[m[K In lambda function:
+[01m[K/home/hm/ros2_ws/src/robot-multi-floor-navigation/multi_floor_nav/include/multi_floor_nav/bt_nodes/elevator_mqtt_nodes.hpp:105:68:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  105 |       client_->set_message_callback([this]([01;35m[Kmqtt::const_message_ptr msg[m[K) {
+      |                                            [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[01m[K/home/hm/ros2_ws/src/robot-multi-floor-navigation/multi_floor_nav/src/elevator_bt_executor.cpp:[m[K In member function ‘[01m[Kdouble NavigateToElevatorEntry::[01;32m[KgetCurrentYaw[m[K()[m[K’:
+[01m[K/home/hm/ros2_ws/src/robot-multi-floor-navigation/multi_floor_nav/src/elevator_bt_executor.cpp:311:29:[m[K [01;35m[Kwarning: [m[Kignoring return value of ‘[01m[Kbool BT::Blackboard::[01;32m[Kget[m[K(const std::string&, T&) const [35m[K[with T = std::__cxx11::basic_string<char>; std::string = std::__cxx11::basic_string<char>][m[K[m[K’, declared with attribute ‘[01m[Knodiscard[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-result-Wunused-result]8;;[m[K]
+  311 |     [01;35m[Kconfig().blackboard->get("robot_namespace", robot_ns)[m[K;
+      |     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/jazzy/include/behaviortree_cpp/tree_node.h:17[m[K,
+                 from [01m[K/opt/ros/jazzy/include/behaviortree_cpp/leaf_node.h:17[m[K,
+                 from [01m[K/opt/ros/jazzy/include/behaviortree_cpp/action_node.h:17[m[K,
+                 from [01m[K/opt/ros/jazzy/include/behaviortree_cpp/behavior_tree.h:16[m[K,
+                 from [01m[K/opt/ros/jazzy/include/behaviortree_cpp/bt_factory.h:17[m[K,
+                 from [01m[K/home/hm/ros2_ws/src/robot-multi-floor-navigation/multi_floor_nav/src/elevator_bt_executor.cpp:10[m[K:
+[01m[K/opt/ros/jazzy/include/behaviortree_cpp/blackboard.h:389:13:[m[K [01;36m[Knote: [m[Kdeclared here
+  389 | inline bool [01;36m[KBlackboard[m[K::get(const std::string& key, T& value) const
+      |             [01;36m[K^~~~~~~~~~[m[K
+[01m[K/home/hm/ros2_ws/src/robot-multi-floor-navigation/multi_floor_nav/src/elevator_bt_executor.cpp:[m[K In lambda function:
+[01m[K/home/hm/ros2_ws/src/robot-multi-floor-navigation/multi_floor_nav/src/elevator_bt_executor.cpp:638:16:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kelapsed[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  638 |           auto [01;35m[Kelapsed[m[K = std::chrono::duration<double>(
+      |                [01;35m[K^~~~~~~[m[K
+[01m[K/home/hm/ros2_ws/src/robot-multi-floor-navigation/multi_floor_nav/src/elevator_bt_executor.cpp:[m[K In member function ‘[01m[Kvirtual BT::NodeStatus ElevatorBTExecutor::IsRobot::[01;32m[Ktick[m[K()[m[K’:
+[01m[K/home/hm/ros2_ws/src/robot-multi-floor-navigation/multi_floor_nav/src/elevator_bt_executor.cpp:816:27:[m[K [01;35m[Kwarning: [m[Kignoring return value of ‘[01m[Kbool BT::Blackboard::[01;32m[Kget[m[K(const std::string&, T&) const [35m[K[with T = std::__cxx11::basic_string<char>; std::string = std::__cxx11::basic_string<char>][m[K[m[K’, declared with attribute ‘[01m[Knodiscard[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-result-Wunused-result]8;;[m[K]
+  816 |   [01;35m[Kconfig().blackboard->get("robot_namespace", actual)[m[K;
+      |   [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/jazzy/include/behaviortree_cpp/blackboard.h:389:13:[m[K [01;36m[Knote: [m[Kdeclared here
+  389 | inline bool [01;36m[KBlackboard[m[K::get(const std::string& key, T& value) const
+      |             [01;36m[K^~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/elevator_bt_executor.dir/build.make:76: CMakeFiles/elevator_bt_executor.dir/src/elevator_bt_executor.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:706: CMakeFiles/elevator_bt_executor.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

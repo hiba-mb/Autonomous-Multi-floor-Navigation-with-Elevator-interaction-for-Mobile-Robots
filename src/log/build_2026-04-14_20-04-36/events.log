@@ -1,0 +1,193 @@
+[0.000000] (-) TimerEvent: {}
+[0.000736] (aws_robomaker_hospital_world) JobQueued: {'identifier': 'aws_robomaker_hospital_world', 'dependencies': OrderedDict()}
+[0.000905] (multi_floor_nav) JobQueued: {'identifier': 'multi_floor_nav', 'dependencies': OrderedDict()}
+[0.000953] (jackal_elevator) JobQueued: {'identifier': 'jackal_elevator', 'dependencies': OrderedDict({'multi_floor_nav': '/home/hm/ros2_ws/src/install/multi_floor_nav'})}
+[0.001000] (multi_floor_nav) JobStarted: {'identifier': 'multi_floor_nav'}
+[0.035635] (aws_robomaker_hospital_world) JobStarted: {'identifier': 'aws_robomaker_hospital_world'}
+[0.044288] (multi_floor_nav) JobProgress: {'identifier': 'multi_floor_nav', 'progress': 'cmake'}
+[0.045231] (multi_floor_nav) Command: {'cmd': ['/usr/bin/cmake', '/home/hm/ros2_ws/src/robot-multi-floor-navigation/multi_floor_nav', '-DCMAKE_INSTALL_PREFIX=/home/hm/ros2_ws/src/install/multi_floor_nav'], 'cwd': '/home/hm/ros2_ws/src/build/multi_floor_nav', 'env': OrderedDict({'GZ_SIM_SYSTEM_PLUGIN_PATH': '/opt/ros/jazzy/lib/rmf_robot_sim_gz_plugins/:/opt/ros/jazzy/lib/rmf_building_sim_gz_plugins/', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_GUI_PLUGIN_PATH': '/opt/ros/jazzy/lib/rmf_robot_sim_gz_plugins/:/opt/ros/jazzy/lib/rmf_building_sim_gz_plugins/', 'GZ_SIM_RESOURCE_PATH': '/home/hm/.gz/fuel/fuel.gazebosim.org/openrobotics/models:/home/hm/.gz/fuel/fuel.gazebosim.org/openrobotics/models/fire%20hydrant/3:/home/hm/.gz/fuel/fuel.gazebosim.org/openrobotics/models/fire%20hydrant/3/materials/textures', 'USER': 'hm', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'wayland', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LIBGL_ALWAYS_SOFTWARE': '0', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/zenoh_cpp_vendor/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/hm', 'OLDPWD': '/home/hm', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2717', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'hm', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'hm', 'TERM': 'xterm-256color', 'GAZEBO_MODEL_PATH': '/opt/ros/jazzy/share/', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/hm-ub:@/tmp/.ICE-unix/2666,unix/hm-ub:/tmp/.ICE-unix/2666', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/f8ced77f_889c_4652_9cce_4ea6071a0b61', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.P08IN3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.130', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', '__GL_SYNC_TO_VBLANK': '0', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/hm/ros2_ws/src/build/multi_floor_nav', 'TURTLEBOT3_MODEL': 'waffle', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/home/hm/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.055372] (aws_robomaker_hospital_world) JobProgress: {'identifier': 'aws_robomaker_hospital_world', 'progress': 'cmake'}
+[0.057225] (aws_robomaker_hospital_world) Command: {'cmd': ['/usr/bin/cmake', '/home/hm/ros2_ws/src/aws-robomaker-hospital-world', '-DCATKIN_INSTALL_INTO_PREFIX_ROOT=0', '-DCMAKE_INSTALL_PREFIX=/home/hm/ros2_ws/src/install/aws_robomaker_hospital_world'], 'cwd': '/home/hm/ros2_ws/src/build/aws_robomaker_hospital_world', 'env': OrderedDict({'GZ_SIM_SYSTEM_PLUGIN_PATH': '/opt/ros/jazzy/lib/rmf_robot_sim_gz_plugins/:/opt/ros/jazzy/lib/rmf_building_sim_gz_plugins/', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_GUI_PLUGIN_PATH': '/opt/ros/jazzy/lib/rmf_robot_sim_gz_plugins/:/opt/ros/jazzy/lib/rmf_building_sim_gz_plugins/', 'GZ_SIM_RESOURCE_PATH': '/home/hm/.gz/fuel/fuel.gazebosim.org/openrobotics/models:/home/hm/.gz/fuel/fuel.gazebosim.org/openrobotics/models/fire%20hydrant/3:/home/hm/.gz/fuel/fuel.gazebosim.org/openrobotics/models/fire%20hydrant/3/materials/textures', 'USER': 'hm', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'wayland', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LIBGL_ALWAYS_SOFTWARE': '0', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/zenoh_cpp_vendor/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/hm', 'OLDPWD': '/home/hm', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2717', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'hm', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'hm', 'TERM': 'xterm-256color', 'GAZEBO_MODEL_PATH': '/opt/ros/jazzy/share/', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/hm-ub:@/tmp/.ICE-unix/2666,unix/hm-ub:/tmp/.ICE-unix/2666', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/f8ced77f_889c_4652_9cce_4ea6071a0b61', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.P08IN3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.130', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', '__GL_SYNC_TO_VBLANK': '0', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/hm/ros2_ws/src/build/aws_robomaker_hospital_world', 'TURTLEBOT3_MODEL': 'waffle', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/home/hm/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}), 'shell': False}
+[0.104539] (-) TimerEvent: {}
+[0.120651] (aws_robomaker_hospital_world) StderrLine: {'line': b'\x1b[0mCMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):\n'}
+[0.121028] (aws_robomaker_hospital_world) StderrLine: {'line': b'  Compatibility with CMake < 3.5 will be removed from a future version of\n'}
+[0.121145] (aws_robomaker_hospital_world) StderrLine: {'line': b'  CMake.\n'}
+[0.121236] (aws_robomaker_hospital_world) StderrLine: {'line': b'\n'}
+[0.121350] (aws_robomaker_hospital_world) StderrLine: {'line': b'  Update the VERSION argument <min> value or use a ...<max> suffix to tell\n'}
+[0.121449] (aws_robomaker_hospital_world) StderrLine: {'line': b'  CMake that the project does not need compatibility with older versions.\n'}
+[0.121540] (aws_robomaker_hospital_world) StderrLine: {'line': b'\n'}
+[0.121631] (aws_robomaker_hospital_world) StderrLine: {'line': b'\x1b[0m\n'}
+[0.204700] (-) TimerEvent: {}
+[0.305345] (-) TimerEvent: {}
+[0.336208] (multi_floor_nav) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[0.344130] (aws_robomaker_hospital_world) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[0.405420] (-) TimerEvent: {}
+[0.505855] (-) TimerEvent: {}
+[0.565147] (multi_floor_nav) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[0.567399] (aws_robomaker_hospital_world) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[0.606050] (-) TimerEvent: {}
+[0.621212] (aws_robomaker_hospital_world) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.625405] (multi_floor_nav) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.706190] (-) TimerEvent: {}
+[0.793720] (aws_robomaker_hospital_world) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.794197] (multi_floor_nav) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.805849] (aws_robomaker_hospital_world) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.806225] (-) TimerEvent: {}
+[0.806441] (aws_robomaker_hospital_world) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.807220] (aws_robomaker_hospital_world) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.809881] (multi_floor_nav) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.810263] (multi_floor_nav) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.817429] (multi_floor_nav) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.828758] (aws_robomaker_hospital_world) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.829762] (multi_floor_nav) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.906383] (-) TimerEvent: {}
+[0.961476] (aws_robomaker_hospital_world) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.978425] (aws_robomaker_hospital_world) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.979012] (multi_floor_nav) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.979168] (aws_robomaker_hospital_world) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.979377] (aws_robomaker_hospital_world) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.992918] (multi_floor_nav) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.993582] (multi_floor_nav) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.994096] (multi_floor_nav) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.006527] (-) TimerEvent: {}
+[1.011874] (multi_floor_nav) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[1.031214] (aws_robomaker_hospital_world) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:4 (find_package):\n'}
+[1.031629] (aws_robomaker_hospital_world) StderrLine: {'line': b'  By not providing "Findcatkin.cmake" in CMAKE_MODULE_PATH this project has\n'}
+[1.031776] (aws_robomaker_hospital_world) StderrLine: {'line': b'  asked CMake to find a package configuration file provided by "catkin", but\n'}
+[1.031899] (aws_robomaker_hospital_world) StderrLine: {'line': b'  CMake did not find one.\n'}
+[1.032024] (aws_robomaker_hospital_world) StderrLine: {'line': b'\n'}
+[1.032427] (aws_robomaker_hospital_world) StderrLine: {'line': b'  Could not find a package configuration file provided by "catkin" with any\n'}
+[1.032649] (aws_robomaker_hospital_world) StderrLine: {'line': b'  of the following names:\n'}
+[1.032832] (aws_robomaker_hospital_world) StderrLine: {'line': b'\n'}
+[1.033008] (aws_robomaker_hospital_world) StderrLine: {'line': b'    catkinConfig.cmake\n'}
+[1.033187] (aws_robomaker_hospital_world) StderrLine: {'line': b'    catkin-config.cmake\n'}
+[1.033393] (aws_robomaker_hospital_world) StderrLine: {'line': b'\n'}
+[1.033606] (aws_robomaker_hospital_world) StderrLine: {'line': b'  Add the installation prefix of "catkin" to CMAKE_PREFIX_PATH or set\n'}
+[1.033803] (aws_robomaker_hospital_world) StderrLine: {'line': b'  "catkin_DIR" to a directory containing one of the above files.  If "catkin"\n'}
+[1.033995] (aws_robomaker_hospital_world) StderrLine: {'line': b'  provides a separate development package or SDK, be sure it has been\n'}
+[1.034242] (aws_robomaker_hospital_world) StderrLine: {'line': b'  installed.\n'}
+[1.034489] (aws_robomaker_hospital_world) StderrLine: {'line': b'\n'}
+[1.034708] (aws_robomaker_hospital_world) StderrLine: {'line': b'\x1b[0m\n'}
+[1.034926] (aws_robomaker_hospital_world) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[1.040748] (aws_robomaker_hospital_world) CommandEnded: {'returncode': 1}
+[1.079025] (aws_robomaker_hospital_world) JobEnded: {'identifier': 'aws_robomaker_hospital_world', 'rc': 1}
+[1.106688] (-) TimerEvent: {}
+[1.207233] (-) TimerEvent: {}
+[1.307869] (-) TimerEvent: {}
+[1.408435] (-) TimerEvent: {}
+[1.454597] (multi_floor_nav) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[1.508633] (-) TimerEvent: {}
+[1.609243] (-) TimerEvent: {}
+[1.703900] (multi_floor_nav) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)\n'}
+[1.709382] (-) TimerEvent: {}
+[1.727794] (multi_floor_nav) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.809516] (-) TimerEvent: {}
+[1.897600] (multi_floor_nav) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.909655] (-) TimerEvent: {}
+[2.010140] (-) TimerEvent: {}
+[2.047021] (multi_floor_nav) StdoutLine: {'line': b'-- Found rosidl_adapter: 4.6.7 (/opt/ros/jazzy/share/rosidl_adapter/cmake)\n'}
+[2.064829] (multi_floor_nav) StdoutLine: {'line': b'-- Found rclcpp: 28.1.16 (/opt/ros/jazzy/share/rclcpp/cmake)\n'}
+[2.110350] (-) TimerEvent: {}
+[2.210731] (-) TimerEvent: {}
+[2.311158] (-) TimerEvent: {}
+[2.340158] (multi_floor_nav) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[2.354941] (multi_floor_nav) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)\n'}
+[2.411345] (-) TimerEvent: {}
+[2.511803] (-) TimerEvent: {}
+[2.613036] (-) TimerEvent: {}
+[2.665537] (multi_floor_nav) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  \n'}
+[2.713235] (-) TimerEvent: {}
+[2.732875] (multi_floor_nav) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") \n'}
+[2.790465] (multi_floor_nav) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[2.813370] (-) TimerEvent: {}
+[2.913788] (-) TimerEvent: {}
+[2.988791] (multi_floor_nav) StdoutLine: {'line': b'-- Found rclcpp_action: 28.1.16 (/opt/ros/jazzy/share/rclcpp_action/cmake)\n'}
+[3.013900] (-) TimerEvent: {}
+[3.070621] (multi_floor_nav) StdoutLine: {'line': b'-- Found geometry_msgs: 5.3.6 (/opt/ros/jazzy/share/geometry_msgs/cmake)\n'}
+[3.114013] (-) TimerEvent: {}
+[3.116366] (multi_floor_nav) StdoutLine: {'line': b'-- Found nav_msgs: 5.3.6 (/opt/ros/jazzy/share/nav_msgs/cmake)\n'}
+[3.162886] (multi_floor_nav) StdoutLine: {'line': b'-- Found tf2: 0.36.19 (/opt/ros/jazzy/share/tf2/cmake)\n'}
+[3.177031] (multi_floor_nav) StdoutLine: {'line': b'-- Found tf2_ros: 0.36.19 (/opt/ros/jazzy/share/tf2_ros/cmake)\n'}
+[3.214238] (-) TimerEvent: {}
+[3.314753] (-) TimerEvent: {}
+[3.415189] (-) TimerEvent: {}
+[3.446762] (multi_floor_nav) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.36.19 (/opt/ros/jazzy/share/tf2_geometry_msgs/cmake)\n'}
+[3.515458] (-) TimerEvent: {}
+[3.517041] (multi_floor_nav) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.3.0 (/opt/ros/jazzy/share/eigen3_cmake_module/cmake)\n'}
+[3.519528] (multi_floor_nav) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[3.519863] (multi_floor_nav) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[3.526338] (multi_floor_nav) StdoutLine: {'line': b'-- Found angles: 1.16.1 (/opt/ros/jazzy/share/angles/cmake)\n'}
+[3.533278] (multi_floor_nav) StdoutLine: {'line': b'-- Found nav2_msgs: 1.3.10 (/opt/ros/jazzy/share/nav2_msgs/cmake)\n'}
+[3.615567] (-) TimerEvent: {}
+[3.620974] (multi_floor_nav) StdoutLine: {'line': b'-- Found behaviortree_cpp: 4.8.3 (/opt/ros/jazzy/share/behaviortree_cpp/cmake)\n'}
+[3.631278] (multi_floor_nav) StdoutLine: {'line': b'-- Found nav2_util: 1.3.10 (/opt/ros/jazzy/share/nav2_util/cmake)\n'}
+[3.715913] (-) TimerEvent: {}
+[3.816616] (-) TimerEvent: {}
+[3.917049] (-) TimerEvent: {}
+[4.017589] (-) TimerEvent: {}
+[4.118079] (-) TimerEvent: {}
+[4.218612] (-) TimerEvent: {}
+[4.319158] (-) TimerEvent: {}
+[4.419743] (-) TimerEvent: {}
+[4.520162] (-) TimerEvent: {}
+[4.620612] (-) TimerEvent: {}
+[4.721126] (-) TimerEvent: {}
+[4.821533] (-) TimerEvent: {}
+[4.922120] (-) TimerEvent: {}
+[5.022761] (-) TimerEvent: {}
+[5.123464] (-) TimerEvent: {}
+[5.146965] (multi_floor_nav) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)\n'}
+[5.223579] (-) TimerEvent: {}
+[5.323919] (-) TimerEvent: {}
+[5.424318] (-) TimerEvent: {}
+[5.524745] (-) TimerEvent: {}
+[5.625258] (-) TimerEvent: {}
+[5.725714] (-) TimerEvent: {}
+[5.826220] (-) TimerEvent: {}
+[5.926960] (-) TimerEvent: {}
+[6.027411] (-) TimerEvent: {}
+[6.128205] (-) TimerEvent: {}
+[6.177349] (multi_floor_nav) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[6.228359] (-) TimerEvent: {}
+[6.331473] (-) TimerEvent: {}
+[6.432180] (-) TimerEvent: {}
+[6.532796] (-) TimerEvent: {}
+[6.633177] (-) TimerEvent: {}
+[6.733584] (-) TimerEvent: {}
+[6.834054] (-) TimerEvent: {}
+[6.934911] (-) TimerEvent: {}
+[7.035515] (-) TimerEvent: {}
+[7.136079] (-) TimerEvent: {}
+[7.236493] (-) TimerEvent: {}
+[7.336964] (-) TimerEvent: {}
+[7.437579] (-) TimerEvent: {}
+[7.538056] (-) TimerEvent: {}
+[7.638488] (-) TimerEvent: {}
+[7.657338] (multi_floor_nav) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[7.683346] (multi_floor_nav) StdoutLine: {'line': b'-- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)\n'}
+[7.738712] (-) TimerEvent: {}
+[7.839201] (-) TimerEvent: {}
+[7.939613] (-) TimerEvent: {}
+[8.027216] (multi_floor_nav) StdoutLine: {'line': b'-- Found PythonExtra: /usr/bin/python3  \n'}
+[8.039797] (-) TimerEvent: {}
+[8.140289] (-) TimerEvent: {}
+[8.240942] (-) TimerEvent: {}
+[8.341528] (-) TimerEvent: {}
+[8.441934] (-) TimerEvent: {}
+[8.542708] (-) TimerEvent: {}
+[8.643124] (-) TimerEvent: {}
+[8.743527] (-) TimerEvent: {}
+[8.844031] (-) TimerEvent: {}
+[8.944847] (-) TimerEvent: {}
+[9.045272] (-) TimerEvent: {}
+[9.103148] (multi_floor_nav) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed \n'}
+[9.145370] (-) TimerEvent: {}
+[9.245786] (-) TimerEvent: {}
+[9.288518] (multi_floor_nav) StdoutLine: {'line': b'-- Configuring done (9.2s)\n'}
+[9.345905] (-) TimerEvent: {}
+[9.379220] (multi_floor_nav) StdoutLine: {'line': b'-- Generating done (0.1s)\n'}
+[9.409004] (multi_floor_nav) StdoutLine: {'line': b'-- Build files have been written to: /home/hm/ros2_ws/src/build/multi_floor_nav\n'}
+[9.442569] (multi_floor_nav) JobEnded: {'identifier': 'multi_floor_nav', 'rc': 'SIGINT'}
+[9.446095] (-) TimerEvent: {}
+[9.454086] (jackal_elevator) JobSkipped: {'identifier': 'jackal_elevator'}
+[9.454306] (-) EventReactorShutdown: {}

@@ -1,0 +1,28 @@
+[  1%] Built target multi_floor_nav__rs
+[  3%] Built target multi_floor_nav__rosidl_generator_type_description
+[  7%] Built target robot_visibility_node
+[  7%] Built target ament_cmake_python_symlink_multi_floor_nav
+[  9%] Built target multi_floor_nav__cpp
+[ 24%] Built target multi_floor_nav__rosidl_generator_c
+[ 32%] Built target multi_floor_nav__rosidl_typesupport_introspection_c
+[ 39%] Built target multi_floor_nav__rosidl_typesupport_fastrtps_c
+[ 47%] Built target multi_floor_nav__rosidl_typesupport_introspection_cpp
+[ 54%] Built target multi_floor_nav__rosidl_typesupport_cpp
+[ 62%] Built target multi_floor_nav__rosidl_typesupport_c
+[ 69%] Built target multi_floor_nav__rosidl_typesupport_fastrtps_cpp
+[ 73%] Built target multi_floor_navigation_node
+[ 77%] Built target change_map_node
+[ 79%] [32mBuilding CXX object CMakeFiles/elevator_bt_executor.dir/src/elevator_bt_executor.cpp.o[0m
+[ 79%] Built target multi_floor_nav
+[ 81%] Built target multi_floor_nav__py
+[ 86%] Built target multi_floor_nav__rosidl_generator_py
+[ 90%] Built target multi_floor_nav_s__rosidl_typesupport_fastrtps_c
+[ 94%] Built target multi_floor_nav_s__rosidl_typesupport_introspection_c
+[ 98%] Built target multi_floor_nav_s__rosidl_typesupport_c
+running egg_info
+writing multi_floor_nav.egg-info/PKG-INFO
+writing dependency_links to multi_floor_nav.egg-info/dependency_links.txt
+writing top-level names to multi_floor_nav.egg-info/top_level.txt
+reading manifest file 'multi_floor_nav.egg-info/SOURCES.txt'
+writing manifest file 'multi_floor_nav.egg-info/SOURCES.txt'
+[ 98%] Built target ament_cmake_python_build_multi_floor_nav_egg

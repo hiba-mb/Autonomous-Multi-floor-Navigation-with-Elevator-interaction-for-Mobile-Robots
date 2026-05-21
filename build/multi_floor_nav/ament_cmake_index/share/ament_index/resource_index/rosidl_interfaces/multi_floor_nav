@@ -1,0 +1,4 @@
+msg/MissionRequest.idl
+msg/MissionRequest.msg
+srv/IntTrigger.idl
+srv/IntTrigger.srv
