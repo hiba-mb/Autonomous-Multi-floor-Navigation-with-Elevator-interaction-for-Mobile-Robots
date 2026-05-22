@@ -1,0 +1,40 @@
+slam_toolbox:
+  ros__parameters:
+    solver_plugin: solver_plugins::CeresSolver
+    ceres_linear_solver: SPARSE_NORMAL_CHOLESKY
+    ceres_preconditioner: SCHUR_JACOBI
+    ceres_trust_strategy: LEVENBERG_MARQUARDT
+
+    odom_frame: odom
+    map_frame: map
+    base_frame: base_link
+    scan_topic: /front/scan_fixed
+
+    mode: mapping
+    use_sim_time: true
+
+    resolution: 0.03
+    max_laser_range: 25.0
+
+    # Intervalles réduits pour petits objets
+    minimum_time_interval: 0.1      # était 0.5
+    minimum_distance_interval: 0.1  # était 0.3
+    minimum_angle_interval: 0.05    # était 0.1
+
+    # Map update plus fréquent
+    map_update_interval: 0.5        # était 5.0
+
+    # Loop closure
+    do_loop_closing: true
+    loop_search_maximum_distance: 3.0
+    loop_match_minimum_chain_size: 10
+    loop_match_maximum_variance: 2.0
+    loop_match_minimum_response: 0.8
+
+    transform_publish_period: 0.02
+    enable_interactive_mode: false
+
+    throttle_scans: 1
+    use_scan_matching: true
+    use_scan_barycenter: true
+    debug_logging: false

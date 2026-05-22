@@ -1,0 +1,256 @@
+<?xml version="1.0"?>
+<root BTCPP_format="4" main_tree_to_execute="MultiFloorMission">
+
+  <BehaviorTree ID="MultiFloorMission">
+    <Sequence name="MultiFloorMission">
+
+      <SetGoal
+        current_floor="{current_floor}"
+        goal_floor="{goal_floor}"
+        name="SetGoal"/>
+
+      <Fallback name="SameFloorOrDifferent">
+
+        <!-- ══════════════════════════════════════════════════ -->
+        <!--  CAS 1 : Même étage → navigation directe          -->
+        <!-- ══════════════════════════════════════════════════ -->
+        <Sequence name="SameFloorSequence">
+          <SameFloor
+            current_floor="{current_floor}"
+            goal_floor="{goal_floor}"
+            name="SameFloorCheck"/>
+          <NavigateToGoal name="NavToGoalDirect"/>
+        </Sequence>
+
+        <!-- ══════════════════════════════════════════════════ -->
+        <!--  CAS 2 : Étage différent → ascenseur              -->
+        <!-- ══════════════════════════════════════════════════ -->
+        <Sequence name="NeedElevator">
+
+          <!-- 1. Aller devant l'ascenseur -->
+          <ChangeMap floor="{current_floor}" name="ChangeMapCurrent"/>
+
+          <Fallback name="SelectElevatorEntry">
+
+            <!-- ── Floor 0 ── -->
+            <Sequence name="EntryFromFloor0">
+              <IsAtFloor floor="0" current_floor="{current_floor}" name="CheckFloor0Entry"/>
+              <Fallback name="SelectRobotEntryFloor0">
+
+                <Sequence name="EntryFloor0Robot1">
+                  <IsRobot robot_id="robot1" name="CheckRobot1Floor0"/>
+                  <RetryUntilSuccessful num_attempts="3">
+                    <NavigateToElevatorEntry
+                      x="5.2" y="-4.5" yaw="0.0"
+                      name="NavToElevatorEntryFloor0Robot1"/>
+                  </RetryUntilSuccessful>
+                </Sequence>
+
+                <Sequence name="EntryFloor0Robot2">
+                  <IsRobot robot_id="robot2" name="CheckRobot2Floor0"/>
+                  <RetryUntilSuccessful num_attempts="3">
+                    <NavigateToElevatorEntry
+                      x="5.6" y="-4.95" yaw="0.0"
+                      name="NavToElevatorEntryFloor0Robot2"/>
+                  </RetryUntilSuccessful>
+                </Sequence>
+
+              </Fallback>
+            </Sequence>
+
+            <!-- ── Floor 1 ── -->
+            <Sequence name="EntryFromFloor1">
+              <IsAtFloor floor="1" current_floor="{current_floor}" name="CheckFloor1Entry"/>
+              <Fallback name="SelectRobotEntryFloor1">
+
+                <Sequence name="EntryFloor1Robot1">
+                  <IsRobot robot_id="robot1" name="CheckRobot1Floor1"/>
+                  <RetryUntilSuccessful num_attempts="3">
+                    <NavigateToElevatorEntry
+                      x="4.8" y="-4.7" yaw="0.0"
+                      name="NavToElevatorEntryFloor1Robot1"/>
+                  </RetryUntilSuccessful>
+                </Sequence>
+
+                <Sequence name="EntryFloor1Robot2">
+                  <IsRobot robot_id="robot2" name="CheckRobot2Floor1"/>
+                  <RetryUntilSuccessful num_attempts="3">
+                    <NavigateToElevatorEntry
+                      x="4.8" y="-4.7" yaw="0.0"
+                      name="NavToElevatorEntryFloor1Robot2"/>
+                  </RetryUntilSuccessful>
+                </Sequence>
+
+              </Fallback>
+            </Sequence>
+
+          </Fallback>
+
+           
+  <Fallback name="RecallCabin">
+
+    <Sequence name="RecallToFloor0">
+        <IsAtFloor floor="0" current_floor="{current_floor}" name="ImAtFloor0"/>
+        <CallElevatorMQTT
+            broker="localhost" port="1883"
+            topic="elevator/call"
+            floor="0"
+            robot_id="{robot_namespace}"
+            name="CallFloor0"/>
+        <!-- Attendre le verrou avant de commander -->
+        <WaitElevatorGrant
+            robot_id="{robot_namespace}"
+            timeout="120.0"
+            name="WaitGrant0"/>
+        <WaitElevatorReady
+            robot_id="{robot_namespace}"
+            topic="/elevator/ready"
+            expected_floor="0"
+            timeout="120.0"
+            name="WaitFloor0"/>
+    </Sequence>
+
+    <Sequence name="RecallToFloor1">
+        <IsAtFloor floor="1" current_floor="{current_floor}" name="ImAtFloor1"/>
+        <CallElevatorMQTT
+            broker="localhost" port="1883"
+            topic="elevator/call"
+            floor="1"
+            robot_id="{robot_namespace}"
+            name="CallFloor1"/>
+        <!-- Attendre le verrou avant de commander -->
+        <WaitElevatorGrant
+            robot_id="{robot_namespace}"
+            timeout="120.0"
+            name="WaitGrant1"/>
+        <WaitElevatorReady
+            topic="/elevator/ready"
+            robot_id="{robot_namespace}"
+            expected_floor="1"
+            timeout="120.0"
+            name="WaitFloor1"/>
+    </Sequence>
+
+</Fallback>
+           <!-- 2. Ouvrir la porte -->
+          <OpenElevatorDoor
+            topic="/elevator/door_joint/cmd" position="1.0"
+            name="OpenDoorEntry"/>
+          <Wait wait_duration="1.5" name="WaitDoorOpen"/>
+
+          <ClearCostmap name="ClearBeforeEnter"/>
+
+          <!-- 3. Entrer dans la cabine -->
+          <Fallback name="SelectEnterMethod">
+            <Sequence name="EnterFromFloor0">
+              <IsAtFloor floor="0" current_floor="{current_floor}" name="CheckFloor0Enter"/>
+              <NavigateToElevatorEntry
+                x="7.1" y="-4.9" yaw="0.0"
+                name="EnterElevatorFloor0"/>
+            </Sequence>
+            <Sequence name="EnterFromFloor1">
+              <IsAtFloor floor="1" current_floor="{current_floor}" name="CheckFloor1Enter"/>
+              <NavigateToElevatorEntry
+                x="7.1" y="-4.9" yaw="0.0"
+                name="NavInsideElevatorFloor1"/>
+            </Sequence>
+          </Fallback>
+
+          <!-- 4. Fermer la porte -->
+          <CloseElevatorDoor
+            topic="/elevator/door_joint/cmd" position="0.0"
+            name="CloseDoorInside"/>
+
+          <!-- 5. Appeler l'ascenseur et attendre -->
+          <Fallback name="SelectFloor">
+
+            <Sequence name="GoToFloor1">
+              <IsAtFloor floor="0" current_floor="{current_floor}" name="CheckAtFloor0"/>
+              <CallElevatorMQTT
+                broker="localhost" port="1883"
+                topic="elevator/call"
+                floor="1"
+                robot_id="{robot_namespace}"
+                name="CallFloor1"/>
+              <WaitElevatorReady
+                robot_id="{robot_namespace}"
+                topic= "/elevator/ready"
+                expected_floor="1"
+                timeout="120.0"
+                name="WaitFloor1"/>
+              <ChangeMap floor="1" name="ChangeMapLevel1"/>
+              <Relocalize x="7.2" y="-5.0" yaw="0.0" name="RelocalizeLevel1"/>
+              <CancelNavigation name="CancelNav1"/>
+              <Wait wait_duration="1.0" name="WaitAMCLSettle1"/>
+            </Sequence>
+
+            <Sequence name="GoToFloor0">
+              <IsAtFloor floor="1" current_floor="{current_floor}" name="CheckAtFloor1"/>
+              <CallElevatorMQTT
+                broker="localhost" port="1883"
+                topic="elevator/call"
+                floor="0"
+                robot_id="{robot_namespace}"
+                name="CallFloor0"/>
+              <WaitElevatorReady
+                robot_id="{robot_namespace}"
+                topic= "/elevator/ready"
+                expected_floor="0"
+                timeout="30.0"
+                name="WaitFloor0"/>
+              <ChangeMap floor="0" name="ChangeMapLevel0"/>
+              <Relocalize x="7.2" y="-5.0" yaw="0.0" name="RelocalizeLevel0"/>
+              <CancelNavigation name="CancelNav0"/>
+              <Wait wait_duration="1.0" name="WaitAMCLSettle0"/>
+            </Sequence>
+
+          </Fallback>
+
+          <!-- 6. Attendre convergence AMCL -->
+          <Wait wait_duration="2.0" name="WaitAMCL"/>
+          <ClearCostmap name="ClearCostmapAfterMap"/>
+
+          <!-- 7. Ouvrir la porte et sortir -->
+          <OpenElevatorDoor
+            topic="/elevator/door_joint/cmd" position="1.0"
+            name="OpenDoorExit"/>
+          <Wait wait_duration="1.5" name="WaitDoorFullyOpen"/>
+          <ClearCostmap name="ClearCostmapBeforeExit"/>
+
+          <ExitElevator
+            distance="2.5"
+            speed="-1.0"
+            name="ExitElevator"/>
+
+          <CallElevatorMQTT
+            broker="localhost" port="1883"
+            topic="elevator/release"
+            floor="0"
+            robot_id="{robot_namespace}"
+            name="ReleaseElevator"/>
+
+
+          <Wait wait_duration="5.0" name="WaitCostmapUpdate"/>
+          <ClearCostmap name="ClearCostmapAfterExit"/>
+
+          <!-- 8. Fermer la porte derrière -->
+          <CloseElevatorDoor
+            topic="/elevator/door_joint/cmd" position="0.0"
+            name="CloseDoorBehind"/>
+          <!-- Après sortie ascenseur -->
+
+          <ClearCostmap name="ClearCostmapAfterDoor"/>
+          <Wait wait_duration="1.5" name="WaitCostmapRebuild"/>
+
+          <!-- 9. Navigation vers le goal final -->
+          <NavigateToGoal name="NavToGoalFinal"/>
+
+          
+
+        </Sequence>
+      </Fallback>
+
+    </Sequence>
+  </BehaviorTree>
+
+</root>

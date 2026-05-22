@@ -1,0 +1,627 @@
+Panels:
+  - Class: rviz_common/Displays
+    Help Height: 78
+    Name: Displays
+    Property Tree Widget:
+      Expanded:
+        - /Global Options1
+        - /Robot11
+        - /Robot21
+        - /Map1
+      Splitter Ratio: 0.5
+    Tree Height: 800
+  - Class: rviz_common/Views
+    Expanded:
+      - /Current View1
+    Name: Views
+    Splitter Ratio: 0.5
+  - Class: nav2_rviz_plugins/Navigation 2
+    Name: Navigation2 Robot1
+    Namespace: /robot1          # ← panel dédié robot1
+  - Class: nav2_rviz_plugins/Navigation 2
+    Name: Navigation2 Robot2
+    Namespace: /robot2          # ← panel dédié robot2 (AJOUT)
+    
+
+Visualization Manager:
+  Class: ""
+  Displays:
+    - Alpha: 0.5
+      Cell Size: 1
+      Class: rviz_default_plugins/Grid
+      Color: 160; 160; 164
+      Enabled: true
+      Line Style:
+        Line Width: 0.03
+        Value: Lines
+      Name: Grid
+      Normal Cell Count: 0
+      Offset:
+        X: 0
+        Y: 0
+        Z: 0
+      Plane: XY
+      Plane Cell Count: 10
+      Reference Frame: <Fixed Frame>
+      Value: true
+
+    # ─────────────── MAP ROBOT 1 ───────────────
+    - Alpha: 0.7
+      Binary representation: false
+      Binary threshold: 100
+      Class: rviz_default_plugins/Map
+      Color Scheme: map
+      Draw Behind: false
+      Enabled: true
+      Name: Map_R1                           # ← changé
+      Topic:
+        Depth: 1
+        Durability Policy: Transient Local
+        Filter size: 20
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /robot1/map                   # ← changé
+      Update Topic:
+        Depth: 5
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /robot1/map_updates           # ← changé
+      Use Timestamp: false
+      Value: true
+
+    # ─────────────── MAP ROBOT 2 ───────────────
+    - Alpha: 0.7
+      Binary representation: false
+      Binary threshold: 100
+      Class: rviz_default_plugins/Map
+      Color Scheme: map
+      Draw Behind: false
+      Enabled: true
+      Name: Map_R2                           # ← ajouté
+      Topic:
+        Depth: 1
+        Durability Policy: Transient Local
+        Filter size: 20
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /robot2/map                   # ← ajouté
+      Update Topic:
+        Depth: 5
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /robot2/map_updates           # ← ajouté
+      Use Timestamp: false
+      Value: true
+
+    # ─────────────── TF ───────────────
+    - Class: rviz_default_plugins/TF
+      Enabled: true
+      Filter (blacklist): ""
+      Filter (whitelist): ""
+      Frame Timeout: 15
+      Frames:
+        All Enabled: true
+      Marker Scale: 0.5
+      Name: TF
+      Show Arrows: false
+      Show Axes: true
+      Show Names: true
+      Update Interval: 0
+      Value: true
+
+    # ═══════════════════════════════════
+    #              ROBOT 1
+    # ═══════════════════════════════════
+    - Class: rviz_common/Group
+      Displays:
+
+        - Alpha: 1
+          Class: rviz_default_plugins/RobotModel
+          Collision Enabled: false
+          Description Source: Topic
+          Description Topic:
+            Depth: 5
+            Durability Policy: Transient Local
+            History Policy: Keep Last
+            Reliability Policy: Reliable
+            Value: /robot1/robot_description_filtered
+          Enabled: true
+          Links:
+            All Links Enabled: true
+            Expand Joint Details: false
+            Expand Link Details: false
+            Expand Tree: false
+            Link Tree Style: ""
+          Name: RobotModel_R1
+          TF Prefix: "robot1"
+          Update Interval: 0
+          Value: true
+          Visual Enabled: true
+
+        - Alpha: 1
+          Autocompute Intensity Bounds: true
+          Autocompute Value Bounds:
+            Max Value: 10
+            Min Value: -10
+            Value: true
+          Axis: Z
+          Channel Name: intensity
+          Class: rviz_default_plugins/LaserScan
+          Color: 255; 0; 0
+          Color Transformer: FlatColor
+          Decay Time: 0
+          Enabled: true
+          Name: LaserScan_R1
+          Position Transformer: XYZ
+          Selectable: true
+          Size (Pixels): 3
+          Size (m): 0.01
+          Style: Points
+          Topic:
+            Depth: 5
+            Durability Policy: Volatile
+            Filter size: 20
+            History Policy: Keep Last
+            Reliability Policy: Reliable
+            Value: /robot1/front/scan
+          Use Fixed Frame: true
+          Use rainbow: true
+          Value: true
+
+        - Alpha: 0.3
+          Binary representation: false
+          Binary threshold: 100
+          Class: rviz_default_plugins/Map
+          Color Scheme: costmap
+          Draw Behind: false
+          Enabled: true
+          Name: GlobalCostmap_R1
+          Topic:
+            Depth: 1
+            Durability Policy: Transient Local
+            Filter size: 20
+            History Policy: Keep Last
+            Reliability Policy: Reliable
+            Value: /robot1/global_costmap/costmap
+          Update Topic:
+            Depth: 5
+            Durability Policy: Volatile
+            History Policy: Keep Last
+            Reliability Policy: Reliable
+            Value: /robot1/global_costmap/costmap_updates
+          Use Timestamp: false
+          Value: true
+
+        - Alpha: 0.5
+          Binary representation: false
+          Binary threshold: 100
+          Class: rviz_default_plugins/Map
+          Color Scheme: costmap
+          Draw Behind: false
+          Enabled: true
+          Name: LocalCostmap_R1
+          Topic:
+            Depth: 1
+            Durability Policy: Volatile 
+            Filter size: 20
+            History Policy: Keep Last
+            Reliability Policy: Reliable
+            Value: /robot1/local_costmap/costmap
+          Update Topic:
+            Depth: 5
+            Durability Policy: Volatile
+            History Policy: Keep Last
+            Reliability Policy: Reliable
+            Value: /robot1/local_costmap/costmap_updates
+          Use Timestamp: false
+          Value: true
+
+        - Alpha: 1
+          Buffer Length: 1
+          Class: rviz_default_plugins/Path
+          Color: 0; 200; 0
+          Enabled: true
+          Line Style: Lines
+          Line Width: 0.05
+          Name: GlobalPath_R1
+          Offset:
+            X: 0
+            Y: 0
+            Z: 0
+          Topic:
+            Depth: 5
+            Durability Policy: Volatile
+            Filter size: 20
+            History Policy: Keep Last
+            Reliability Policy: Reliable
+            Value: /robot1/plan
+          Value: true
+
+        - Alpha: 1
+          Buffer Length: 1
+          Class: rviz_default_plugins/Path
+          Color: 0; 100; 255
+          Enabled: true
+          Line Style: Lines
+          Line Width: 0.05
+          Name: LocalPath_R1
+          Offset:
+            X: 0
+            Y: 0
+            Z: 0
+          Topic:
+            Depth: 5
+            Durability Policy: Volatile
+            Filter size: 20
+            History Policy: Keep Last
+            Reliability Policy: Reliable
+            Value: /robot1/local_plan
+          Value: true
+
+        - Angle Tolerance: 0.1
+          Class: rviz_default_plugins/Odometry
+          Covariance:
+            Orientation:
+              Alpha: 0.5
+              Color: 255; 255; 127
+              Color Style: Unique
+              Frame: Local
+              Offset: 1
+              Scale: 1
+              Value: false
+            Position:
+              Alpha: 0.3
+              Color: 204; 51; 204
+              Scale: 1
+              Value: false
+            Value: false
+          Enabled: true
+          Keep: 50
+          Name: Odometry_R1
+          Position Tolerance: 0.1
+          Shape:
+            Alpha: 1
+            Axes Length: 0.5
+            Axes Radius: 0.05
+            Color: 255; 80; 0
+            Head Length: 0.2
+            Head Radius: 0.08
+            Shaft Length: 0.5
+            Shaft Radius: 0.04
+            Value: Arrow
+          Topic:
+            Depth: 5
+            Durability Policy: Volatile
+            Filter size: 20
+            History Policy: Keep Last
+            Reliability Policy: Reliable
+            Value: /robot1/odometry/filtered
+          Value: true
+
+        - Alpha: 1
+          Class: rviz_default_plugins/PoseWithCovariance
+          Color: 255; 50; 0
+          Color Style: Unique
+          Enabled: true
+          Name: AMCLPose_R1
+          Topic:
+            Depth: 5
+            Durability Policy: Volatile
+            Filter size: 20
+            History Policy: Keep Last
+            Reliability Policy: Reliable
+            Value: /robot1/amcl_pose
+          Value: true
+
+      Enabled: true
+      Name: Robot1
+
+    # ═══════════════════════════════════
+    #              ROBOT 2
+    # ═══════════════════════════════════
+    - Class: rviz_common/Group
+      Displays:
+
+        - Alpha: 1
+          Class: rviz_default_plugins/RobotModel
+          Collision Enabled: false
+          Description Source: Topic
+          Description Topic:
+            Depth: 5
+            Durability Policy: Transient Local
+            History Policy: Keep Last
+            Reliability Policy: Reliable
+            Value: /robot2/robot_description_filtered
+          Enabled: true
+          Links:
+            All Links Enabled: true
+            Expand Joint Details: false
+            Expand Link Details: false
+            Expand Tree: false
+            Link Tree Style: ""
+          Name: RobotModel_R2
+          TF Prefix: "robot2"
+          Update Interval: 0
+          Value: true
+          Visual Enabled: true
+
+        - Alpha: 1
+          Autocompute Intensity Bounds: true
+          Autocompute Value Bounds:
+            Max Value: 10
+            Min Value: -10
+            Value: true
+          Axis: Z
+          Channel Name: intensity
+          Class: rviz_default_plugins/LaserScan
+          Color: 255; 200; 0
+          Color Transformer: FlatColor
+          Decay Time: 0
+          Enabled: true
+          Name: LaserScan_R2
+          Position Transformer: XYZ
+          Selectable: true
+          Size (Pixels): 3
+          Size (m): 0.01
+          Style: Points
+          Topic:
+            Depth: 5
+            Durability Policy: Volatile
+            Filter size: 20
+            History Policy: Keep Last
+            Reliability Policy: Reliable
+            Value: /robot2/front/scan
+          Use Fixed Frame: true
+          Use rainbow: true
+          Value: true
+
+        - Alpha: 0.3
+          Binary representation: false
+          Binary threshold: 100
+          Class: rviz_default_plugins/Map
+          Color Scheme: costmap
+          Draw Behind: false
+          Enabled: true
+          Name: GlobalCostmap_R2
+          Topic:
+            Depth: 1
+            Durability Policy: Transient Local
+            Filter size: 20
+            History Policy: Keep Last
+            Reliability Policy: Reliable
+            Value: /robot2/global_costmap/costmap
+          Update Topic:
+            Depth: 5
+            Durability Policy: Volatile
+            History Policy: Keep Last
+            Reliability Policy: Reliable
+            Value: /robot2/global_costmap/costmap_updates
+          Use Timestamp: false
+          Value: true
+
+        - Alpha: 0.5
+          Binary representation: false
+          Binary threshold: 100
+          Class: rviz_default_plugins/Map
+          Color Scheme: costmap
+          Draw Behind: false
+          Enabled: true
+          Name: LocalCostmap_R2
+          Topic:
+            Depth: 1
+            Durability Policy: Volatile 
+            Filter size: 20
+            History Policy: Keep Last
+            Reliability Policy: Reliable
+            Value: /robot2/local_costmap/costmap
+          Update Topic:
+            Depth: 5
+            Durability Policy: Volatile
+            History Policy: Keep Last
+            Reliability Policy: Reliable
+            Value: /robot2/local_costmap/costmap_updates
+          Use Timestamp: false
+          Value: true
+
+        - Alpha: 1
+          Buffer Length: 1
+          Class: rviz_default_plugins/Path
+          Color: 0; 180; 100
+          Enabled: true
+          Line Style: Lines
+          Line Width: 0.05
+          Name: GlobalPath_R2
+          Offset:
+            X: 0
+            Y: 0
+            Z: 0
+          Topic:
+            Depth: 5
+            Durability Policy: Volatile
+            Filter size: 20
+            History Policy: Keep Last
+            Reliability Policy: Reliable
+            Value: /robot2/plan
+          Value: true
+
+        - Alpha: 1
+          Buffer Length: 1
+          Class: rviz_default_plugins/Path
+          Color: 100; 0; 255
+          Enabled: true
+          Line Style: Lines
+          Line Width: 0.05
+          Name: LocalPath_R2
+          Offset:
+            X: 0
+            Y: 0
+            Z: 0
+          Topic:
+            Depth: 5
+            Durability Policy: Volatile
+            Filter size: 20
+            History Policy: Keep Last
+            Reliability Policy: Reliable
+            Value: /robot2/local_plan
+          Value: true
+
+        - Angle Tolerance: 0.1
+          Class: rviz_default_plugins/Odometry
+          Covariance:
+            Orientation:
+              Alpha: 0.5
+              Color: 255; 255; 127
+              Color Style: Unique
+              Frame: Local
+              Offset: 1
+              Scale: 1
+              Value: false
+            Position:
+              Alpha: 0.3
+              Color: 204; 51; 204
+              Scale: 1
+              Value: false
+            Value: false
+          Enabled: true
+          Keep: 50
+          Name: Odometry_R2
+          Position Tolerance: 0.1
+          Shape:
+            Alpha: 1
+            Axes Length: 0.5
+            Axes Radius: 0.05
+            Color: 0; 180; 255
+            Head Length: 0.2
+            Head Radius: 0.08
+            Shaft Length: 0.5
+            Shaft Radius: 0.04
+            Value: Arrow
+          Topic:
+            Depth: 5
+            Durability Policy: Volatile
+            Filter size: 20
+            History Policy: Keep Last
+            Reliability Policy: Reliable
+            Value: /robot2/odometry/filtered
+          Value: true
+
+        - Alpha: 1
+          Class: rviz_default_plugins/PoseWithCovariance
+          Color: 0; 100; 255
+          Color Style: Unique
+          Enabled: true
+          Name: AMCLPose_R2
+          Topic:
+            Depth: 5
+            Durability Policy: Volatile
+            Filter size: 20
+            History Policy: Keep Last
+            Reliability Policy: Reliable
+            Value: /robot2/amcl_pose
+          Value: true
+
+      Enabled: true
+      Name: Robot2
+
+  Enabled: true
+  Global Options:
+    Background Color: 48; 48; 48
+    Fixed Frame: map
+    Frame Rate: 15
+    Queue Size: 100
+
+  Name: root
+  Tools:
+    - Class: rviz_default_plugins/Interact
+      Hide Inactive Objects: true
+    - Class: rviz_default_plugins/MoveCamera
+    - Class: rviz_default_plugins/Select
+    - Class: rviz_default_plugins/FocusCamera
+    - Class: rviz_default_plugins/Measure
+      Line color: 128; 128; 0
+
+    # ── Robot 1 ──────────────────────────────────────────────────────────────
+    - Class: rviz_default_plugins/SetInitialPose
+      Covariance x: 0.25
+      Covariance y: 0.25
+      Covariance yaw: 0.0685
+      Topic:
+        Depth: 5
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /robot1/initialpose
+
+    - Class: rviz_default_plugins/SetGoal
+      Topic:
+        Depth: 5
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Reliability Policy: Best Effort
+        Value: /robot1/goal_pose     # ← inchangé
+
+    # ── Robot 2 ──────────────────────────────────────────────────────────────
+    - Class: rviz_default_plugins/SetInitialPose
+      Covariance x: 0.25
+      Covariance y: 0.25
+      Covariance yaw: 0.0685
+      Topic:
+        Depth: 5
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /robot2/initialpose   # ← AJOUT
+
+    - Class: rviz_default_plugins/SetGoal
+      Topic:
+        Depth: 5
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Reliability Policy: Best Effort
+        Value: /robot2/goal_pose     # ← AJOUT
+
+  Transformation:
+    Current:
+      Class: rviz_default_plugins/TF
+
+  Value: true
+
+  Views:
+    Current:
+      Class: rviz_default_plugins/Orbit
+      Distance: 30
+      Enable Stereo Rendering:
+        Stereo Eye Separation: 0.06
+        Stereo Focal Distance: 1
+        Swap Stereo Eyes: false
+        Value: false
+      Focal Point:
+        X: 0
+        Y: 0
+        Z: 0
+      Focal Shape Fixed Size: true
+      Focal Shape Size: 0.05
+      Invert Z Axis: false
+      Name: Current View
+      Near Clip Distance: 0.01
+      Pitch: 1
+      Target Frame: map
+      Value: Orbit (rviz)
+      Yaw: 3.14
+    Saved: ~
+
+Window Geometry:
+  Displays:
+    collapsed: false
+  Height: 1011
+  Hide Left Dock: false
+  Hide Right Dock: false
+  Navigation2:
+    collapsed: false
+  Views:
+    collapsed: false
+  Width: 1854
+  X: 66
+  Y: 32
